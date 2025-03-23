@@ -1,21 +1,31 @@
 {
-  "inputs": [],
+  "inputs": [
+    {
+      "type": "pickString",
+      "id": "question-one-answers",
+      "description": "What is the purpose of the no_std tag?",
+      "options": [
+        "Standardization of standards",
+        "Access to a library of standard functions",
+        "Smaller binary size",
+        "More utility functions"
+      ],
+      "default": "component"
+    }
+  ],
   "tasks": [
     {
-      "isBackground": true,
-      "label": "auth",
+      "label": "Question 1:  What is the purpose of the no_std tag?",
       "presentation": {
         "clear": true,
         "focus": true,
         "showReuseMessage": false
       },
-      "script": "cd client | ts-node auth.ts",
-      "type": "npm"
-    },
-    {
-      "label": "test",
-      "script": "cd client | ts-node test.ts",
-      "type": "npm"
+      "script": "cd scripts | ./question1.sh",
+      "type": "shell",
+      "args": [
+        "${input:question-one-answers}"
+      ]
     },
     {
       "command": "workbench.action.createTerminalEditorSide",

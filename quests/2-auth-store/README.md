@@ -247,7 +247,7 @@ If you're hitting a brick wall, and you're not sure what your next move is,
 check out [this section](../../README.md#feeling-lost) in our main README. It's
 got a couple of suggestions for where you might go from here.
 
-[how-to-play]: ../1-hello-world/README.md#how-to-play
+[how-to-play]: ../1-hello-world/CHALLENGE1.md#how-to-play
 [data-example]: https://developers.stellar.org/docs/build/smart-contracts/getting-started/storing-data
 [auth-example]: https://developers.stellar.org/docs/build/smart-contracts/example-contracts/auth
 [persist-data]: https://developers.stellar.org/docs/learn/encyclopedia/storage/persisting-data

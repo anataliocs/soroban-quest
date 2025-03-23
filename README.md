@@ -10,25 +10,15 @@ Preview
 
 ## Table of Contents <!-- omit in toc -->
 
-- [Welcome to a Sneak Peak](#welcome)
-- [Feeling Lost?](#feeling-lost)
-    - [Re-Visit the Pioneer Quest](#re-visit-the-pioneer-quest)
-- [Join us on Discord](#join-us-on-discord)
-
 ## Welcome
 
-Soroban Quest has been updated!
+To a whole new updated Soroban Quest!
 
 It's a faster, more curated, guided developer journey through Stellar Smart Contracts.
 
-## Join us on Discord
 
-In the [Stellar Developers Discord server][dev-discord], you will find a large,
-active, and helpful community! We have recently announced a $100M Soroban
-Adoption Fund, which SDF created to support the growth and development of the
-Soroban ecosystem. We'll be sharing more about additional programs on the
-Stellar Dev Discord in the not-too-distant future, so make sure to join today to
-be the among the first to hear those announcements.
+
+--
 
 VPN
 

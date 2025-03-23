@@ -284,7 +284,7 @@ If you're hitting a brick wall, and you're not sure what your next move is,
 check out [this section](../../README.md#feeling-lost) in our main README. It's
 got a couple of suggestions for where you might go from here.
 
-[how-to-play]: ../1-hello-world/README.md#how-to-play
+[how-to-play]: ../1-hello-world/CHALLENGE1.md#how-to-play
 [xdr]: https://developers.stellar.org/docs/encyclopedia/xdr
 [stellar-cli]: https://developers.stellar.org/docs/tools/developer-tools/cli/stellar-cli
 [lab]: https://lab.stellar.org/?$=network$id=testnet&label=Testnet&horizonUrl=https:////horizon-testnet.stellar.org&rpcUrl=https:////soroban-testnet.stellar.org&passphrase=Test%20SDF%20Network%20/;%20September%202015;;
