@@ -1,6 +1,6 @@
 # Soroban Quest <!-- omit in toc -->
 
-![Stellar-Quest-email][series-5-img]
+[![Open in Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=anataliocs/soroban-quest)
 
 ## Table of Contents <!-- omit in toc -->
 
