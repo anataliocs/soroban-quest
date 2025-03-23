@@ -2,8 +2,9 @@
 
 <div style="text-align: center;" align="center">
 <img src="assets/Stellar-Quest-3.png" alt="stellar quest 3" height="auto" width="50%"/>
-Preview
 </div>
+
+Preview
 
 [![Open in Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=anataliocs/soroban-quest)
 
