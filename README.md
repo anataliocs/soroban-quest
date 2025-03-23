@@ -2,47 +2,18 @@
 
 ![Stellar-Quest-email][series-5-img]
 
-[![Open in Gitpod][gp-btn]][gitpod]
-
 ## Table of Contents <!-- omit in toc -->
 
 - [Welcome](#welcome)
 - [Feeling Lost?](#feeling-lost)
-  - [Re-Visit the Pioneer Quest](#re-visit-the-pioneer-quest)
+    - [Re-Visit the Pioneer Quest](#re-visit-the-pioneer-quest)
 - [Join us on Discord](#join-us-on-discord)
 
 ## Welcome
 
-Welcome to our Soroban Quest! We are beyond excited you've joined us. We've
-worked hard to make this a productive, interesting, and above all fun learning
-experience for you!
+Soroban Quest has been updated!
 
-So let's have some fun!
-
-## Feeling Lost?
-
-There's a lot going on here! If you're feeling confused, or you're not sure how
-this whole thing is supposed to work, don't fret. We have a couple options for
-you:
-
-### Re-Visit the Pioneer Quest
-
-please checkout our [pioneer quest][pioneer]. It covers the basic structure of
-this repository, all the tools you'll need, and the process of getting
-everything working together.
-
-It's an important resource to keep handy during all these live quests. Some of
-the most important bits you'll need to know from it:
-
-- Understanding what a "Gitpod workspace" even is, and how we've set it up for
-  you to successfully complete these quests.
-- Using the `sq` CLI to login to your Stellar Quest account, play quests, verify
-  them, and more.
-- Interacting with a Soroban sandbox, as well as the Futurenet, from within this
-  gitpod workspace.
-
-If you feel lost on any of that, you could probably use a refresher. Go ahead,
-[be a pioneer][pioneer] once more. We don't judge!
+It's a faster, more curated, guided developer journey through Stellar Smart Contracts.
 
 ## Join us on Discord
 
@@ -51,15 +22,69 @@ active, and helpful community! We have recently announced a $100M Soroban
 Adoption Fund, which SDF created to support the growth and development of the
 Soroban ecosystem. We'll be sharing more about additional programs on the
 Stellar Dev Discord in the not-too-distant future, so make sure to join today to
-be the among the first to hear those announcements. This is yet another way for
-you to **Tinker and Earn** XLM with Soroban! Many of the people who are
-_creating_ the Soroban platform are there, and willing to answer questions, too!
-Talk about "straight from the horse's mouth"!!
+be the among the first to hear those announcements.
 
-[![Open in Gitpod][gp-btn]][gitpod]
+VPN
 
-[series-5-img]: https://user-images.githubusercontent.com/4383610/200077219-de8e1f20-9878-4705-bec6-ced9a3904694.jpg
-[gp-btn]: https://gitpod.io/button/open-in-gitpod.svg
-[gitpod]: https://gitpod.io/#ENV=prod/https://github.com/stellar/soroban-quest
-[pioneer]: https://github.com/stellar/soroban-quest--pioneer
+```
+wg --help
+
+@devcontainers/cli 0.75.0. Node.js v22.14.0. linux 6.8.0-1021-azure x64.
+```
+
+Tunnel
+
+CloudFlare [Tunnels]: https://github.com/cloudflare/cloudflared
+
+```
+cloudflared
+cloudflared tunnel -hello-world
+cloudflared tunnel --url http://localhost:8080
+```
+
+OAuth CLI
+
+```
+oauth2c https://discord.com \
+  --client-id 1309255291048558632 \
+  --client-secret  \
+  --response-types code \
+  --response-mode query \
+  --grant-type authorization_code \
+  --auth-method client_secret_basic \
+  --scopes identity \
+  --redirect-url https://fluffy-sniffle-5rj7v4pv97f4qwq-20241.app.github.dev:20241 \
+  --callback-tls-cert https://raw.githubusercontent.com/cloudentity/oauth2c/master/data/cert.pem \
+  --callback-tls-key https://raw.githubusercontent.com/cloudentity/oauth2c/master/data/key.pem
+```
+
+DNote
+
+```
+https://github.com/dnote/dnote/wiki/Dnote-CLI#commands
+```
+
+Launch Codespace from Github CLI
+
+Install github and setup auth token for API
+```
+brew install gh
+
+gh codespace list
+
+gh codespace create --repo anataliocs/soroban-quest -b migrate-to-dev-containers --status --web -l WestUs2
+
+```
+
+
+Logs
+```
+[ViewCreationLog V] container folder path: "/workspaces/.codespaces/.persistedshare"
+[ViewCreationLog V] shared folder path: "/workspaces/.codespaces/shared/postCreateOutput.json"
+[ViewCreationLog V] shared file path: "/workspaces/.codespaces/shared/postCreateOutput.json"
+
+
+/workspaces/.codespaces/shared/
+```
+
 [dev-discord]: https://discord.gg/stellardev

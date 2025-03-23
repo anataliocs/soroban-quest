@@ -1,0 +1,86 @@
+{
+  "name": "Soroban Quest Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/rust:bullseye",
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "16",
+    "storage": "32"
+  },
+  "containerEnv": {
+    "SOROBAN_RPC_URL": "https://soroban-testnet.stellar.org",
+    "SOROBAN_NETWORK_PASSPHRASE": "Test SDF Network ; September 2015",
+    "DISCORD_SERVER_ID": "897514728459468821",
+    "DISCORD_CHANNEL_ID": "897514728459468821",
+    "DISCORD_CLIENT_ID": "1309255291048558632"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {},
+    "ghcr.io/devcontainers-extra/features/autoenv:1": {},
+    "ghcr.io/devcontainers/features/rust:1": {
+      "targets": "wasm32-unknown-unknown",
+      "profile": "default"
+    },
+    "ghcr.io/devcontainers-extra/features/vscode-cli:1": {},
+    "ghcr.io/devcontainers-extra/features/cloudflared:1": {},
+    "ghcr.io/devcontainers-extra/features/dnote:1": {},
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers-extra/features/starship:1": {}
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "quests/1-hello-world/README.md",
+        "quests/1-hello-world/STORY.md"
+      ]
+    },
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "rust-lang.rust-analyzer",
+        "vadimcn.vscode-lldb",
+        "aaron-bond.better-comments",
+        "ms-vscode.live-server",
+        "Gruntfuggly.todo-tree",
+        "adpyke.codesnap",
+        "Equinusocio.vsc-material-theme-icons",
+        "enkia.tokyo-night",
+        "IBM.output-colorizer",
+        "mintlify.document",
+      ],
+      "settings": {
+        "workbench.colorTheme": "Tokyo Night Storm",
+        "workbench.iconTheme": "eq-material-theme-icons-darker",
+        "workbench.settings.editor": "json",
+        "workbench.startupEditor": "readme",
+        "workbench.extensions.command.installFromVSIX": true,
+        "github.codespaces.devcontainerChangedNotificationStyle": "modal",
+        "terminal.integrated.allowChords": true,
+        "terminal.integrated.shellIntegration.showCommandGuide": true,
+        "terminal.integrated.shellIntegration.history": true,
+        "security.workspace.trust.untrustedFiles": "open",
+        "todo-tree.general.statusBar": "total",
+        "todo-tree.general.showActivityBarBadge": true,
+        "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
+        "todo-tree.general.tags": [
+          "QUEST",
+          "TASK",
+          "CODE",
+        ],
+        "todo-tree.tree.expanded": true
+      }
+    },
+  },
+  "initializeCommand": {
+    "init": "chmod +x .devcontainer/init.sh",
+    "onCreate": "chmod +x .devcontainer/onCreate.sh",
+    "postAttach": "chmod +x .devcontainer/postAttach.sh",
+    "postCreate": "chmod +x .devcontainer/postCreate.sh",
+    "initScript": ".devcontainer/init.sh"
+  },
+  "onCreateCommand": ".devcontainer/onCreate.sh",
+  "postCreateCommand": ".devcontainer/postCreate.sh",
+  "postStartCommand": "",
+  "postAttachCommand": ".devcontainer/postAttach.sh",
+  "updateContentCommand": ".devcontainer/update.sh",
+}

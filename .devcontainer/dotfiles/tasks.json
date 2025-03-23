@@ -1,0 +1,54 @@
+{
+  "inputs": [],
+  "tasks": [
+    {
+      "isBackground": true,
+      "label": "auth",
+      "presentation": {
+        "clear": true,
+        "focus": true,
+        "showReuseMessage": false
+      },
+      "script": "cd client | ts-node auth.ts",
+      "type": "npm"
+    },
+    {
+      "label": "test",
+      "script": "cd client | ts-node test.ts",
+      "type": "npm"
+    },
+    {
+      "command": "workbench.action.createTerminalEditorSide",
+      "label": "open-journal-window",
+      "type": "process"
+    },
+    {
+      "args": [
+        "dnote view"
+      ],
+      "command": "workbench.action.terminal.writeDataToTerminal",
+      "label": "enter-journal-cmd",
+      "type": "process"
+    },
+    {
+      "command": "workbench.action.terminal.runSelectedText",
+      "label": "display-journal-entries",
+      "type": "process"
+    },
+    {
+      "args": [
+        "Quest Journal"
+      ],
+      "command": "workbench.action.terminal.renameWithArg",
+      "dependsOn": [
+        "open-journal-window",
+        "enter-journal-cmd",
+        "display-journal-entries"
+      ],
+      "dependsOrder": "sequence",
+      "label": "journal",
+      "type": "process"
+    }
+  ],
+  "version": "2.0.0"
+}
