@@ -1,4 +1,7 @@
-# Soroban Quest <!-- omit in toc -->
+# Stellar Quest 3 <!-- omit in toc -->
+
+<img src="assets/Stellar-Quest-3.png" alt="stellar quest 3"/>
+Preview
 
 [![Open in Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=anataliocs/soroban-quest)
 
@@ -67,17 +70,18 @@ https://github.com/dnote/dnote/wiki/Dnote-CLI#commands
 Launch Codespace from Github CLI
 
 Install github and setup auth token for API
+
 ```
 brew install gh
 
 gh codespace list
 
-gh codespace create --repo anataliocs/soroban-quest -b migrate-to-dev-containers --status --web -l WestUs2
+gh codespace create --repo anataliocs/soroban-quest -b main --status --web -l WestUs2
 
 ```
 
-
 Logs
+
 ```
 [ViewCreationLog V] container folder path: "/workspaces/.codespaces/.persistedshare"
 [ViewCreationLog V] shared folder path: "/workspaces/.codespaces/shared/postCreateOutput.json"
