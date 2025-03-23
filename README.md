@@ -1,7 +1,7 @@
 # Stellar Quest 3 <!-- omit in toc -->
 
 <div style="text-align: center;" align="center">
-<img src="assets/Stellar-Quest-3.png" alt="stellar quest 3" height="817" width="1294"/>
+<img src="assets/Stellar-Quest-3.png" alt="stellar quest 3" height="auto" width="50%"/>
 Preview
 </div>
 
