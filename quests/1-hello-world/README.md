@@ -4,8 +4,7 @@
 
 #QUEST 1 
 
-I know you're in a hurry. There are badges on the line! Here's the quick-n-dirty
-version of what you need to do to get that awesome SQ badge.
+
 
 **In this quest, you will use your Quest Account to deploy and invoke the quest
 1 Hello World contract on the Stellar Testnet.**
@@ -41,7 +40,7 @@ quest! So, do this before you move on to anything else!
 
 #TASK 2
 
-Open up your terinal
+Open up your terminal
 
 ```bash
 sq user
@@ -240,11 +239,3 @@ If you're hitting a brick wall, and you're not sure what your next move is,
 check out [this section](../../README.md#feeling-lost) in our main README. It's
 got a couple of suggestions for where you might go from here.
 
-[pq-lib]: https://github.com/stellar/soroban-quest--pioneer/blob/main/quests/0-hello-world/src/lib.rs
-[pq-test]: https://github.com/stellar/soroban-quest--pioneer/blob/main/quests/0-hello-world/src/test.rs
-[docs-build]: https://developers.stellar.org/docs/build/smart-contracts/getting-started/hello-world#build-the-contract
-[docs-deploy]: https://developers.stellar.org/docs/build/smart-contracts/getting-started/deploy-to-testnet
-[soroban]: https://developers.stellar.org/
-[cap]: https://github.com/stellar/stellar-protocol/blob/master/core/cap-0046.md
-[tutorials]: https://developers.stellar.org/docs/build/smart-contracts/example-contracts
-[contract-lifecycle]: https://developers.stellar.org/docs/learn/encyclopedia/contract-development/contract-lifecycle

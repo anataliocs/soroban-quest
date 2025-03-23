@@ -1,13 +1,15 @@
 # Stellar Quest 3 <!-- omit in toc -->
 
-<img src="assets/Stellar-Quest-3.png" alt="stellar quest 3"/>
+<div style="text-align: center;" align="center">
+<img src="assets/Stellar-Quest-3.png" alt="stellar quest 3" height="817" width="1294"/>
 Preview
+</div>
 
 [![Open in Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=anataliocs/soroban-quest)
 
 ## Table of Contents <!-- omit in toc -->
 
-- [Welcome](#welcome)
+- [Welcome to a Sneak Peak](#welcome)
 - [Feeling Lost?](#feeling-lost)
     - [Re-Visit the Pioneer Quest](#re-visit-the-pioneer-quest)
 - [Join us on Discord](#join-us-on-discord)

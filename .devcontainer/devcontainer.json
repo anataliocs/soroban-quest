@@ -30,8 +30,7 @@
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "quests/1-hello-world/README.md",
-        "quests/1-hello-world/STORY.md"
+        "assets/Stellar-Quest-3.png"
       ]
     },
     "vscode": {
@@ -52,9 +51,7 @@
         "workbench.colorTheme": "Tokyo Night Storm",
         "workbench.iconTheme": "eq-material-theme-icons-darker",
         "workbench.settings.editor": "json",
-        "workbench.startupEditor": "readme",
         "workbench.extensions.command.installFromVSIX": true,
-        "github.codespaces.devcontainerChangedNotificationStyle": "modal",
         "terminal.integrated.allowChords": true,
         "terminal.integrated.shellIntegration.showCommandGuide": true,
         "terminal.integrated.shellIntegration.history": true,
@@ -67,7 +64,15 @@
           "TASK",
           "CODE",
         ],
-        "todo-tree.tree.expanded": true
+        "todo-tree.tree.expanded": true,
+        "todo-tree.tree.flat": true,
+        "todo-tree.highlights.backgroundColourScheme": [
+          "purple",
+          "blue",
+          "green",
+          "white",
+        ],
+        "todo-tree.tree.showCountsInTree": true
       }
     },
   },
