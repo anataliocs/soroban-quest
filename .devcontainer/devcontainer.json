@@ -2,7 +2,7 @@
   "name": "Soroban Quest Dev Container",
   "dockerFile": "Dockerfile",
   "context": "..",
-  remoteUser: "vscode",
+  "remoteUser": "vscode",
   "hostRequirements": {
     "cpus": 4,
     "memory": "16",
