@@ -7,8 +7,8 @@ use soroban_sdk::{contract, contractimpl, symbol_short, vec, Env, Symbol, Vec};
 //<>TASK
 // //* Learn the function of the no_std tag
 
-/// The `//![no_std]` attribute in Rust is used to indicate that the crate does not depend
-/// on the standard library, resulting in a smaller binary size.  
+// The `//![no_std]` attribute in Rust is used to indicate that the crate does not depend
+// on the standard library, resulting in a smaller binary size.
 
 //<>TASK
 // //* Learn about the contract macro
@@ -30,7 +30,6 @@ pub struct HelloContract;
 /// you are specifying that the functions within that implementation block are part of the contract
 /// logic and will be attached to the contract type specified by the `//[contract]` attribute macro. This
 /// helps organize and separate the contract logic from other parts of the codebase.
-
 #[contractimpl]
 impl HelloContract {
     //<>TASK
@@ -55,7 +54,9 @@ impl HelloContract {
     ///
     /// ```
     pub fn hello(env: Env, to: Symbol) -> Vec<Symbol> {
-        //<>TASK Learn about macro_rules
+        //<>TASK
+        // //* Learn about macro_rules
+
         /// The `vec![&env, symbol_short!("Hello"), to]` expression in the Rust code snippet is creating
         /// a vector containing references to the `Env` struct, a symbol created using the
         /// `symbol_short!` macro with the value "Hello", and the `to` parameter which is of type
@@ -65,6 +66,8 @@ impl HelloContract {
 }
 
 //<>TASK
+// //* Learn about the test module
+
 /// In Rust, `mod test;` is a declaration that creates a module named `test`. Modules in Rust are used
 /// to organize code within a crate by grouping related functionality together. By declaring `mod
 /// test;`, you are indicating that there is a module named `test` in the current scope. This module can
