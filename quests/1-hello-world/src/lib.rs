@@ -1,17 +1,17 @@
-//<>QUEST Learn about your first Stellar smart contract
-
-//<>TASK Learn the function of the no_std tag?
-/// The `//![no_std]` attribute in Rust is used to indicate that the crate does not depend 
-/// on the standard library, resulting in a smaller binary size. 
-
 #![no_std]
 use soroban_sdk::{contract, contractimpl, symbol_short, vec, Env, Symbol, Vec};
+//<>QUEST Learn about your first Stellar smart contract!
+
+//<>TASK Learn the function of the no_std tag?
+/// The `//![no_std]` attribute in Rust is used to indicate that the crate does not depend
+/// on the standard library, resulting in a smaller binary size.  
 
 //<>TASK Learn about the contract macro
 /// The `//[contract]` attribute in Rust is used to mark a struct as a smart contract. When applied to a
 /// struct, it indicates that the struct represents a smart contract and allows the Soroban SDK to
 /// recognize and interact with it as a contract. This attribute is used to define the contract type and
 /// provide necessary metadata for the contract implementation.
+
 #[contract]
 pub struct HelloContract;
 
@@ -24,35 +24,33 @@ pub struct HelloContract;
 /// helps organize and separate the contract logic from other parts of the codebase.
 #[contractimpl]
 impl HelloContract {
-
-
-
     //<>TASK Learn about function declarations
     /// The `pub fn hello(env: Env, to: Symbol) -> Vec<Symbol>` function in the Rust code snippet is a
     /// public function named `hello` defined within the implementation block of the `HelloContract`
     /// smart contract.
-    /// 
-    /// # Arguments 
-    /// 
+    ///
+    /// # Arguments
+    ///
     /// * `env`: The [Env] provides access to information about the currently executing
     /// contract, who invoked it, contract data, functions for signing, hashing, etc.
-    /// 
-    /// * `to`: 
-    /// 
-    /// returns: Vec<Symbol> 
-    /// 
-    /// # Examples 
-    /// 
+    ///
+    /// * `to`:
+    ///
+    /// returns: Vec<Symbol>
+    ///
+    /// # Examples
+    ///
     /// ```
-    /// 
+    ///
     /// ```
     pub fn hello(env: Env, to: Symbol) -> Vec<Symbol> {
-        
         //<>TASK Learn about macro_rules
         /// The `vec![&env, symbol_short!("Hello"), to]` expression in the Rust code snippet is creating
         /// a vector containing references to the `Env` struct, a symbol created using the
         /// `symbol_short!` macro with the value "Hello", and the `to` parameter which is of type
         /// `Symbol`.
+        
+        
         vec![&env, symbol_short!("Hello"), to]
     }
 }

@@ -104,7 +104,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 DISABLE_AUTO_UPDATE=true
 DISABLE_UPDATE_PROMPT=true
-
-eval "$(starship init bash)"
-
-prompt_context(){}
+source <(stellar completion --shell bash)
+prompt_context() {}

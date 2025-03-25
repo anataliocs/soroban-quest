@@ -11,7 +11,7 @@
     "SOROBAN_NETWORK_PASSPHRASE": "Test SDF Network ; September 2015",
     "DISCORD_SERVER_ID": "897514728459468821",
     "DISCORD_CHANNEL_ID": "897514728459468821",
-    "DISCORD_CLIENT_ID": "1309255291048558632"
+    "DISCORD_CLIENT_ID": "1309255291048558632",
   },
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {},
@@ -19,13 +19,17 @@
     "ghcr.io/devcontainers-extra/features/autoenv:1": {},
     "ghcr.io/devcontainers/features/rust:1": {
       "targets": "wasm32-unknown-unknown",
-      "profile": "default"
+      "profile": "default",
     },
     "ghcr.io/devcontainers-extra/features/vscode-cli:1": {},
     "ghcr.io/devcontainers-extra/features/cloudflared:1": {},
     "ghcr.io/devcontainers-extra/features/dnote:1": {},
     "ghcr.io/devcontainers/features/node:1": {},
-    "ghcr.io/devcontainers-extra/features/starship:1": {}
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "password": "test",
+      "vncPort": "5901",
+      "webPort": "6080"
+    }
   },
   "customizations": {
     "codespaces": {
