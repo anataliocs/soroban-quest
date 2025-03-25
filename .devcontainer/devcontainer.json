@@ -86,9 +86,9 @@
         "todo-tree.general.showActivityBarBadge": true,
         "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
         "todo-tree.general.tags": [
-          "QUEST",
-          "TASK",
-          "CHALLENGE",
+          "<>QUEST",
+          "<>TASK",
+          "<>CHALLENGE",
         ],
         "todo-tree.tree.expanded": true,
         "todo-tree.tree.flat": true,

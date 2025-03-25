@@ -28,7 +28,7 @@
   "better-comments.highlightPlainText": true,
   "better-comments.tags": [
     {
-      "tag": "//!",
+      "tag": "//*",
       "color": "#FF2D00",
       "bold": true,
     },
