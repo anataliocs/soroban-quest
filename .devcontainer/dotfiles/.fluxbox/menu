@@ -2,7 +2,7 @@
     [exec] (File Manager) { nautilus ~ } <>
     [exec] (Text Editor) { mousepad } <>
     [exec] (Terminal) { tilix -w ~ -e $(readlink -f /proc/$$/exe) -il } <>
-    [exec] (Web Browser) { x-www-browser --disable-dev-shm-usage } <>
+    [exec] (Web Browser) { firefox -new-tab URL https://farm.kalepail.com/ } <>
     [submenu] (System) {}
         [exec] (Set Resolution) { tilix -t "Set Resolution" -e bash /usr/local/bin/set-resolution } <>
         [exec] (Edit Application Menu) { mousepad ~/.fluxbox/menu } <>
