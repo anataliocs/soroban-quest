@@ -22,11 +22,8 @@
     },
     "2222": {
       onAutoForward: "notify",
-      elevateIfNeeded: true,
-      protocol: "https"
     }
   },
-  privileged: true,
   "containerEnv": {
     "SOROBAN_RPC_URL": "https://soroban-testnet.stellar.org",
     "SOROBAN_NETWORK_PASSPHRASE": "Test SDF Network ; September 2015",
