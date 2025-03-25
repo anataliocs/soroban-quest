@@ -9,16 +9,15 @@ router.get('/', async function (req, res, next) {
     // Instantiate the SDK
     const discordSdk = new DiscordSDK("1309255291048558632");
 
-    console.log(`SDK instantiated ${discordSdk.toString()}`);
+    console.log(`SDK instantiated ${discordSdk.configuration.toString()}`);
 
     async function setupDiscordSdk() {
         console.log("Setting up Discord SDK");
-        await discordSdk.ready();
+        await discordSdk.ready()
+            .catch(reportError => console.error(reportError));
     }
 
-    setupDiscordSdk().then(() => {
-        console.log("Discord SDK is ready");
-    }).catch((err) => {
+    await setupDiscordSdk().catch((err) => {
         console.log(err);
     });
 
