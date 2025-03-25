@@ -8,24 +8,24 @@
     "memory": "16",
     "storage": "32"
   },
-  forwardPorts: [
+  "forwardPorts": [
     "6080:6080",
     "2222:2222",
     "3000:3000"
   ],
-  portsAttributes: {
+  "portsAttributes": {
     "6080": {
-      onAutoForward: "openPreview",
-      label: "VNC",
+      "onAutoForward": "openPreview",
+      "label": "VNC",
     },
     "3000": {
-      onAutoForward: "notify",
-      elevateIfNeeded: true,
-      label: "client"
+      "onAutoForward": "notify",
+      "elevateIfNeeded": true,
+      "label": "client"
     },
     "2222": {
-      onAutoForward: "notify",
-      label: "ssh"
+      "onAutoForward": "notify",
+      "label": "ssh"
     }
   },
   "containerEnv": {
