@@ -24,4 +24,6 @@ if [ -e .devcontainer/dotfiles/dnote.db ]; then
   mv -n .devcontainer/dotfiles/dnote.db "$HOME"/
 fi
 
-mv -n .devcontainer/dotfiles/.fluxbox/menu "$HOME"/.fluxbox
+if [ -e .devcontainer/dotfiles/.fluxbox/menu ]; then
+  mv -n .devcontainer/dotfiles/.fluxbox/menu "$HOME"/.fluxbox
+fi
