@@ -23,7 +23,3 @@ fi
 if [ -e .devcontainer/dotfiles/dnote.db ]; then
   mv -n .devcontainer/dotfiles/dnote.db "$HOME"/
 fi
-
-apt update && apt-get update && apt upgrade && export DEBIAN_FRONTEND=noninteractive &&
-  curl -sSL https://dl.google.com/linux/direct/google-chrome-stable_current_$(dpkg --print-architecture).deb -o /tmp/chrome.deb &&
-  apt-get -y install /tmp/chrome.deb
