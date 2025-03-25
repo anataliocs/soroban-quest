@@ -6,6 +6,11 @@
     "memory": "16",
     "storage": "32"
   },
+  forwardPorts: [
+    "desktop:6080",
+    "ssh:2222",
+    "client:3000"
+  ],
   "containerEnv": {
     "SOROBAN_RPC_URL": "https://soroban-testnet.stellar.org",
     "SOROBAN_NETWORK_PASSPHRASE": "Test SDF Network ; September 2015",
@@ -15,6 +20,7 @@
   },
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/sshd:1": {},
     "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {},
     "ghcr.io/devcontainers-extra/features/autoenv:1": {},
     "ghcr.io/devcontainers/features/rust:1": {

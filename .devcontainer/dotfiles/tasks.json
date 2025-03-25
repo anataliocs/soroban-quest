@@ -21,7 +21,7 @@
         "focus": true,
         "showReuseMessage": false
       },
-      "script": "cd scripts | ./question1.sh",
+      "command": "cd scripts | ./question1.sh",
       "type": "shell",
       "args": [
         "${input:question-one-answers}"
