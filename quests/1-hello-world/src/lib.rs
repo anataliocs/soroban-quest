@@ -1,6 +1,8 @@
 #![no_std]
 use soroban_sdk::{contract, contractimpl, symbol_short, vec, Env, Symbol, Vec};
-//<>QUEST Learn about your first Stellar smart contract!
+
+//<>QUEST
+// //? Learn about your first Stellar smart contract!
 
 //<>TASK Learn the function of the no_std tag?
 /// The `//![no_std]` attribute in Rust is used to indicate that the crate does not depend
@@ -49,8 +51,6 @@ impl HelloContract {
         /// a vector containing references to the `Env` struct, a symbol created using the
         /// `symbol_short!` macro with the value "Hello", and the `to` parameter which is of type
         /// `Symbol`.
-        
-        
         vec![&env, symbol_short!("Hello"), to]
     }
 }

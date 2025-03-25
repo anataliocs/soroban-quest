@@ -88,7 +88,7 @@
         "todo-tree.general.tags": [
           "QUEST",
           "TASK",
-          "CODE",
+          "CHALLENGE",
         ],
         "todo-tree.tree.expanded": true,
         "todo-tree.tree.flat": true,
@@ -96,7 +96,6 @@
           "purple",
           "blue",
           "green",
-          "white",
         ],
         "todo-tree.tree.showCountsInTree": true
       }

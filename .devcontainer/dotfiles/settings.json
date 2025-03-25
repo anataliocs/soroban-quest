@@ -13,19 +13,22 @@
   "terminal.explorerKind": "external",
   "dev.containers.defaultFeatures": {},
   "workbench.settings.editor": "json",
+  "workbench.editorAssociations": {
+    "*.png": "imagePreview.previewEditor"
+  },
   "todo-tree.general.statusBar": "total",
   "todo-tree.general.showActivityBarBadge": true,
   "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
   "todo-tree.general.tags": [
-    "QUEST",
-    "TASK",
-    "CODE"
+    "<>QUEST",
+    "<>TASK",
+    "<>CODE"
   ],
   "todo-tree.tree.expanded": true,
   "better-comments.highlightPlainText": true,
   "better-comments.tags": [
     {
-      "tag": "//*",
+      "tag": "//!",
       "color": "#FF2D00",
       "bold": true,
     },
