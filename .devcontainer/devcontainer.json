@@ -1,6 +1,7 @@
 {
   "name": "Soroban Quest Dev Container",
-  "image": "mcr.microsoft.com/devcontainers/rust:bullseye",
+  "dockerFile": "Dockerfile",
+  "context": "..",
   "hostRequirements": {
     "cpus": 4,
     "memory": "16",
