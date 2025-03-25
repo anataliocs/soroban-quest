@@ -19,6 +19,11 @@
     "3000": {
       onAutoForward: "notify",
       elevateIfNeeded: true
+    },
+    "2222": {
+      onAutoForward: "notify",
+      elevateIfNeeded: true,
+      protocol: "https"
     }
   },
   "containerEnv": {
@@ -39,7 +44,6 @@
       "profile": "default",
     },
     "ghcr.io/devcontainers-extra/features/vscode-cli:1": {},
-    "ghcr.io/devcontainers-extra/features/cloudflared:1": {},
     "ghcr.io/devcontainers-extra/features/dnote:1": {},
     "ghcr.io/devcontainers/features/node:1": {},
     "ghcr.io/devcontainers/features/desktop-lite:1": {
@@ -58,7 +62,7 @@
       "extensions": [
         "streetsidesoftware.code-spell-checker",
         "rust-lang.rust-analyzer",
-        "vadimcn.vscode-lldb",
+        "vadimcn.vscode-lldb.vsix",
         "aaron-bond.better-comments",
         "ms-vscode.live-server",
         "Gruntfuggly.todo-tree",

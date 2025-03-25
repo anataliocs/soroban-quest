@@ -17,10 +17,10 @@
       "id": "question-two-answers",
       "description": "What is a contract macro?",
       "options": [
-        "Stas",
-        "Access",
-        "Smalle",
-        "More"
+        "Makes a struct mutable",
+        "Adds a contract label",
+        "Marks a struct for contract functions attachment",
+        "Creates a JSON RPC Service"
       ],
       "default": "component"
     }

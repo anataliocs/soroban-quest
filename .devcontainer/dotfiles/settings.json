@@ -21,5 +21,18 @@
     "TASK",
     "CODE"
   ],
-  "todo-tree.tree.expanded": true
+  "todo-tree.tree.expanded": true,
+  "better-comments.highlightPlainText": true,
+  "better-comments.tags": [
+    {
+      "tag": "//*",
+      "color": "#FF2D00",
+      "bold": true,
+    },
+    {
+      "tag": "//?",
+      "color": "purple",
+      "bold": true,
+    },
+  ]
 }
