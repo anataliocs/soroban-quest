@@ -1,0 +1,3 @@
+## clipboard manager
+clipmgr=$(type -p parcellite)
+[ -x "$clipmgr" ] && "$clipmgr" &

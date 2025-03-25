@@ -4,7 +4,7 @@
   "context": "..",
   "remoteUser": "vscode",
   "hostRequirements": {
-    "cpus": 4,
+    "cpus": "4",
     "memory": "16",
     "storage": "32"
   },
@@ -37,7 +37,6 @@
     "SOROBAN_NETWORK_PASSPHRASE": "Test SDF Network ; September 2015",
     "DISCORD_SERVER_ID": "897514728459468821",
     "DISCORD_CHANNEL_ID": "897514728459468821",
-    "DISCORD_CLIENT_ID": "1309255291048558632",
     "CONTAINER_ID": "${devcontainerId}"
   },
   "features": {
@@ -52,6 +51,7 @@
     "ghcr.io/devcontainers-extra/features/vscode-cli:1": {},
     "ghcr.io/devcontainers-extra/features/dnote:1": {},
     "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers-extra/features/act:1": {},
     "ghcr.io/devcontainers/features/desktop-lite:1": {
       "password": "test",
       "vncPort": "5901",
