@@ -8,6 +8,10 @@
     "memory": "16",
     "storage": "32"
   },
+  "mounts": [
+    "type=bind,source=${localWorkspaceFolder},target=/work",
+    "type=bind,source=${HOME}/.ssh,target=/root/.ssh,readonly"
+  ],
   "forwardPorts": [
     "6080:6080",
     "2222:2222",
