@@ -2,15 +2,16 @@
   "name": "Soroban Quest Dev Container",
   "dockerFile": "Dockerfile",
   "context": "..",
+  remoteUser: "vscode",
   "hostRequirements": {
     "cpus": 4,
     "memory": "16",
     "storage": "32"
   },
   forwardPorts: [
-    "desktop:6080",
-    "ssh:2222",
-    "client:3000"
+    "6080:6080",
+    "2222:2222",
+    "3000:3000"
   ],
   portsAttributes: {
     "6080": {
@@ -19,10 +20,12 @@
     },
     "3000": {
       onAutoForward: "notify",
-      elevateIfNeeded: true
+      elevateIfNeeded: true,
+      label: "client"
     },
     "2222": {
       onAutoForward: "notify",
+      label: "ssh"
     }
   },
   "containerEnv": {
