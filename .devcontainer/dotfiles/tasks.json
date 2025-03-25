@@ -11,6 +11,18 @@
         "More utility functions"
       ],
       "default": "component"
+    },
+    {
+      "type": "pickString",
+      "id": "question-two-answers",
+      "description": "What is a contract macro?",
+      "options": [
+        "Stas",
+        "Access",
+        "Smalle",
+        "More"
+      ],
+      "default": "component"
     }
   ],
   "tasks": [
@@ -28,36 +40,17 @@
       ]
     },
     {
-      "command": "workbench.action.createTerminalEditorSide",
-      "label": "open-journal-window",
-      "type": "process"
-    },
-    {
+      "label": "Question 2:  What is a contract macro?",
+      "presentation": {
+        "clear": true,
+        "focus": true,
+        "showReuseMessage": true
+      },
+      "command": "cd scripts | ./question1.sh",
+      "type": "shell",
       "args": [
-        "dnote view"
-      ],
-      "command": "workbench.action.terminal.writeDataToTerminal",
-      "label": "enter-journal-cmd",
-      "type": "process"
-    },
-    {
-      "command": "workbench.action.terminal.runSelectedText",
-      "label": "display-journal-entries",
-      "type": "process"
-    },
-    {
-      "args": [
-        "Quest Journal"
-      ],
-      "command": "workbench.action.terminal.renameWithArg",
-      "dependsOn": [
-        "open-journal-window",
-        "enter-journal-cmd",
-        "display-journal-entries"
-      ],
-      "dependsOrder": "sequence",
-      "label": "journal",
-      "type": "process"
+        "${input:question-two-answers}"
+      ]
     }
   ],
   "version": "2.0.0"

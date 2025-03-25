@@ -11,12 +11,23 @@
     "ssh:2222",
     "client:3000"
   ],
+  portsAttributes: {
+    "6080": {
+      onAutoForward: "openPreview",
+      label: "VNC",
+    },
+    "3000": {
+      onAutoForward: "notify",
+      elevateIfNeeded: true
+    }
+  },
   "containerEnv": {
     "SOROBAN_RPC_URL": "https://soroban-testnet.stellar.org",
     "SOROBAN_NETWORK_PASSPHRASE": "Test SDF Network ; September 2015",
     "DISCORD_SERVER_ID": "897514728459468821",
     "DISCORD_CHANNEL_ID": "897514728459468821",
     "DISCORD_CLIENT_ID": "1309255291048558632",
+    "CONTAINER_ID": "${devcontainerId}"
   },
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {},

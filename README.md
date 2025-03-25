@@ -16,16 +16,12 @@ To a whole new updated Soroban Quest!
 
 It's a faster, more curated, guided developer journey through Stellar Smart Contracts.
 
-
-
 --
 
-VPN
+Stream logs
 
 ```
-wg --help
-
-@devcontainers/cli 0.75.0. Node.js v22.14.0. linux 6.8.0-1021-azure x64.
+gh codespace logs
 ```
 
 Tunnel
@@ -62,10 +58,7 @@ https://github.com/dnote/dnote/wiki/Dnote-CLI#commands
 
 Launch Codespace from Github CLI
 
-Install github and setup auth token for API
-
 ```
-brew install gh
 
 gh codespace list
 
