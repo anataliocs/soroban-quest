@@ -31,3 +31,5 @@ fi
 if [ -e .devcontainer/dotfiles/.fluxbox/menu ]; then
   mv -n .devcontainer/dotfiles/.fluxbox/menu "$HOME"/.fluxbox
 fi
+
+export "${CARGO_TARGET_DIR}"="${containerWorkspaceFolder}./target"
