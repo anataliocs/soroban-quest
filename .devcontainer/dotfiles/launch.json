@@ -11,8 +11,6 @@
       ],
       "cwd": "${workspaceFolder}",
       "externalConsole": true,
-      "console": "integratedTerminal",
-      "splitTerminal": "right"
     },
     {
       "name": "Open Image in PNG Editor",
