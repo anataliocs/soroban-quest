@@ -9,7 +9,7 @@
     "storage": "32"
   },
   "mounts": [
-    "type=bind,source=${localWorkspaceFolder},target=/work",
+    "type=bind,source=${localWorkspaceFolder},target=${containerWorkspaceFolder}",
     "type=bind,source=${HOME}/.ssh,target=/root/.ssh,readonly"
   ],
   "forwardPorts": [
@@ -20,7 +20,7 @@
   "portsAttributes": {
     "6080": {
       "onAutoForward": "openPreview",
-      "label": "VNC",
+      "label": "Desktop",
     },
     "3000": {
       "onAutoForward": "notify",
@@ -50,12 +50,13 @@
     },
     "ghcr.io/devcontainers-extra/features/vscode-cli:1": {},
     "ghcr.io/devcontainers-extra/features/dnote:1": {},
-    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "nvmInstallPath": "${HOME/.nvm}"
+    },
     "ghcr.io/devcontainers-extra/features/act:1": {},
     "ghcr.io/devcontainers/features/desktop-lite:1": {
       "password": "test",
-      "vncPort": "5901",
-      "webPort": "6080"
+      "webPort": "6080",
     }
   },
   "customizations": {
@@ -66,23 +67,31 @@
     },
     "vscode": {
       "extensions": [
-        "streetsidesoftware.code-spell-checker",
         "rust-lang.rust-analyzer",
-        "vadimcn.vscode-lldb.vsix",
         "aaron-bond.better-comments",
-        "ms-vscode.live-server",
         "Gruntfuggly.todo-tree",
-        "adpyke.codesnap",
         "Equinusocio.vsc-material-theme-icons",
         "enkia.tokyo-night",
-        "IBM.output-colorizer",
-        "mintlify.document",
       ],
       "settings": {
+        "npm.packageManager": "pnpm",
+        "npm.autoDetect": false,
+        "telemetry.enableTelemetry": false,
+        "search.exclude": {
+          "**/node_modules": true,
+          "**/target": true,
+          "**/vscode/bin/": true
+        },
+        "files.watcherExclude": {
+          "**/.git/objects/**": true,
+          "**/.git/subtree-cache/**": true,
+          "**/node_modules/**": true,
+          "**/target": true,
+          "**/vscode/bin/": true
+        },
         "workbench.colorTheme": "Tokyo Night Storm",
         "workbench.iconTheme": "eq-material-theme-icons-darker",
         "workbench.settings.editor": "json",
-        "workbench.extensions.command.installFromVSIX": true,
         "terminal.integrated.allowChords": true,
         "terminal.integrated.shellIntegration.showCommandGuide": true,
         "terminal.integrated.shellIntegration.history": true,
