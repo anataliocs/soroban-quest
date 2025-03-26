@@ -50,7 +50,6 @@
     },
     "ghcr.io/devcontainers-extra/features/vscode-cli:1": {},
     "ghcr.io/devcontainers-extra/features/dnote:1": {},
-    "ghcr.io/devcontainers/features/node:1": {},
     "ghcr.io/devcontainers-extra/features/act:1": {},
     "ghcr.io/devcontainers/features/desktop-lite:1": {
       "password": "test",
@@ -60,7 +59,7 @@
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "assets/Stellar-Quest-3.png"
+        "README.md"
       ]
     },
     "vscode": {
@@ -72,18 +71,15 @@
         "enkia.tokyo-night",
       ],
       "settings": {
-        "npm.packageManager": "pnpm",
         "npm.autoDetect": false,
         "telemetry.enableTelemetry": false,
         "search.exclude": {
-          "**/node_modules": true,
           "**/target": true,
           "**/vscode/bin/": true
         },
         "files.watcherExclude": {
           "**/.git/objects/**": true,
           "**/.git/subtree-cache/**": true,
-          "**/node_modules/**": true,
           "**/target": true,
           "**/vscode/bin/": true
         },

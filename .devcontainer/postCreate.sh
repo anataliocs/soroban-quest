@@ -1,10 +1,6 @@
 #!/bin/bash
 set -e
 
-# NPM install
-bash -i -c 'nvm install --lts'
-git config devcontainers-theme.hide-status 1
-
 # Install pre-reqs
 sudo apt-get update && sudo apt-get install -y apt-transport-https ca-certificates curl gnupg
 
