@@ -50,9 +50,7 @@
     },
     "ghcr.io/devcontainers-extra/features/vscode-cli:1": {},
     "ghcr.io/devcontainers-extra/features/dnote:1": {},
-    "ghcr.io/devcontainers/features/node:1": {
-      "nvmInstallPath": "${HOME/.nvm}"
-    },
+    "ghcr.io/devcontainers/features/node:1": {},
     "ghcr.io/devcontainers-extra/features/act:1": {},
     "ghcr.io/devcontainers/features/desktop-lite:1": {
       "password": "test",
