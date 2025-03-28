@@ -38,7 +38,7 @@ OAuth CLI
 
 ```
 oauth2c https://discord.com \
-  --client-id 1309255291048558632 \
+  --client-id \
   --client-secret  \
   --response-types code \
   --response-mode query \
