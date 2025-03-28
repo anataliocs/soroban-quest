@@ -8,8 +8,6 @@ Preview
 
 [![Open in Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=anataliocs/soroban-quest)
 
-
-
 [![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/anataliocs/soroban-quest)
 
 ## Table of Contents <!-- omit in toc -->
@@ -26,16 +24,6 @@ Stream logs
 
 ```
 gh codespace logs
-```
-
-Tunnel
-
-CloudFlare [Tunnels]: https://github.com/cloudflare/cloudflared
-
-```
-cloudflared
-cloudflared tunnel -hello-world
-cloudflared tunnel --url http://localhost:8080
 ```
 
 OAuth CLI
