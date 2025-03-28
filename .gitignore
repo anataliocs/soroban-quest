@@ -7,3 +7,4 @@ node_modules
 _squirtle
 _client
 .idea/
+.devpod-internal
