@@ -10,7 +10,7 @@
   },
   "mounts": [
     "type=bind,source=${localWorkspaceFolder},target=${containerWorkspaceFolder}",
-    "type=bind,source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/root/.ssh,readonly"
+    "type=bind,source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/${remoteEnv:HOME}/.ssh,readonly"
   ],
   "forwardPorts": [
     "vnc:6080",
