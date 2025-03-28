@@ -6,26 +6,26 @@
   "hostRequirements": {
     "cpus": 4,
     "memory": "16",
-    "storage": "32",
+    "storage": "32"
   },
   "mounts": [
     "type=bind,source=${localWorkspaceFolder},target=${containerWorkspaceFolder}",
     "type=bind,source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/${remoteEnv:HOME}/.ssh,readonly"
   ],
   "forwardPorts": [
-    "vnc:6080",
-    "ssh:2222",
+    6080,
+    2222
   ],
   "portsAttributes": {
     "6080": {
       "onAutoForward": "openPreview",
       "label": "Desktop",
-      requireLocalPort: true
+      "requireLocalPort": true
     },
     "2222": {
       "onAutoForward": "notify",
       "label": "ssh",
-      requireLocalPort: true
+      "requireLocalPort": true
     }
   },
   "containerEnv": {
@@ -65,7 +65,7 @@
         "aaron-bond.better-comments",
         "Gruntfuggly.todo-tree",
         "Equinusocio.vsc-material-theme-icons",
-        "enkia.tokyo-night",
+        "enkia.tokyo-night"
       ],
       "settings": {
         "workbench.settings.editor": "json",
@@ -92,7 +92,7 @@
         "todo-tree.general.tags": [
           "<>QUEST",
           "<>TASK",
-          "<>CHALLENGE",
+          "<>CHALLENGE"
         ],
         "todo-tree.tree.expanded": true,
         "todo-tree.tree.flat": true,
