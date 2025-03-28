@@ -4,7 +4,17 @@
 <img src="assets/Stellar-Quest-3.png" alt="stellar quest 3" height="auto" width="50%"/>
 </div>
 
-Preview
+## Stellar Quest 3 Preview
+
+- Devcontainers are a relatively new OSS tech that let you spin up a customized dev environment on Codespaces or many
+  other platforms
+- You can connect your local VS Code IDE to the Dev Env or access it in a browser
+- Fully featured dev env with customized and blinged out terminal and IDE
+- Integrated light desktop gives you access to a Firefox browser and GUI file mgmt system
+- This gives you access to Wallet add-ons like xBull
+- You can also create a Passkeys wallet with the OSS Free-Forever password mgmt app BitWarden
+- Users are authenticated via Github and Discord via OAuth
+- The DX will be a more guided, curated and gamified experience designed to be more engaging and fun
 
 [![Open in Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=anataliocs/soroban-quest)
 
@@ -14,9 +24,19 @@ Preview
 
 ## Welcome
 
-To a whole new updated Soroban Quest!
+To a whole new updated ~~Soroban Quest~~ Stellar Quest 3!
 
 It's a faster, more curated, guided developer journey through Stellar Smart Contracts.
+
+Instead of being web app based, we directly use the dev tools that you will use during development during the
+learning process.
+
+- Quizzes are directly integrated into your IDE using VS Code hooks
+- Learning tasks are implemented through a tree of modified TODOs
+- Grading quizzes occurs via Github actions
+- Code challenges involve learning through the normal workflow of:
+    - Making sure the tests run correctly
+    - Making sure you pass security gates in the build process for security, code quality and coding style
 
 --
 
@@ -56,17 +76,15 @@ gh codespace list
 
 gh codespace create --repo anataliocs/soroban-quest -b main --status --web -l WestUs2
 
-```
-
-Logs
+echo 'Y' | gh codespace delete --all --force
 
 ```
-[ViewCreationLog V] container folder path: "/workspaces/.codespaces/.persistedshare"
-[ViewCreationLog V] shared folder path: "/workspaces/.codespaces/shared/postCreateOutput.json"
-[ViewCreationLog V] shared file path: "/workspaces/.codespaces/shared/postCreateOutput.json"
 
+GH Codespaces Remote Terminal
 
-/workspaces/.codespaces/shared/
+```
+gh codespace ssh
+gh codespaces logs
 ```
 
 [dev-discord]: https://discord.gg/stellardev

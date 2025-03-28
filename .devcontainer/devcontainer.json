@@ -43,7 +43,6 @@
     "ghcr.io/devcontainers/features/common-utils:2": {},
     "ghcr.io/devcontainers/features/sshd:1": {},
     "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {},
-    "ghcr.io/devcontainers-extra/features/autoenv:1": {},
     "ghcr.io/devcontainers/features/rust:1": {
       "targets": "wasm32-unknown-unknown",
       "profile": "default",
@@ -88,7 +87,6 @@
         "workbench.iconTheme": "eq-material-theme-icons-darker",
         "workbench.settings.editor": "json",
         "terminal.integrated.allowChords": true,
-        "terminal.integrated.shellIntegration.showCommandGuide": true,
         "terminal.integrated.shellIntegration.history": true,
         "security.workspace.trust.untrustedFiles": "open",
         "todo-tree.general.statusBar": "total",
