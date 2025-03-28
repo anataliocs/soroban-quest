@@ -115,7 +115,7 @@
   },
   "build": {
     "options": [
-      "--platform=linux/arm64/v8"
+      "--platform=linux/amd64"
     ],
     "args": {
       "DEBIAN_VERSION": "bullseye"

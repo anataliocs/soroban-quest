@@ -12,3 +12,11 @@ echo "deb https://packages.doppler.com/public/cli/deb/debian any-version main" |
 
 # Fetch and install latest doppler cli
 sudo apt-get update && sudo apt-get install -y doppler
+
+# Check the exit status and provide informative output
+if [ $? -eq 0 ]; then
+  echo "✅ onCreate() executed successfully"
+else
+  echo "❌ Error executing onCreate(). "
+  exit 1
+fi
