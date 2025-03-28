@@ -1,4 +1,5 @@
 {
+  "workbench.settings.editor": "json",
   "workbench.colorTheme": "Tokyo Night Storm",
   "window.newWindowProfile": "Default",
   "makefile.configureOnOpen": true,
@@ -12,7 +13,6 @@
   "vscode.commands.executeCommand": true,
   "terminal.explorerKind": "external",
   "dev.containers.defaultFeatures": {},
-  "workbench.settings.editor": "json",
   "workbench.editorAssociations": {
     "*.png": "imagePreview.previewEditor"
   },
@@ -30,12 +30,12 @@
     {
       "tag": "//*",
       "color": "#FF2D00",
-      "bold": true,
+      "bold": true
     },
     {
       "tag": "//?",
       "color": "purple",
-      "bold": true,
-    },
-  ],
+      "bold": true
+    }
+  ]
 }

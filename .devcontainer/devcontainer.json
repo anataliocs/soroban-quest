@@ -4,32 +4,28 @@
   "context": "..",
   "remoteUser": "vscode",
   "hostRequirements": {
-    "cpus": "4",
+    "cpus": 4,
     "memory": "16",
-    "storage": "32"
+    "storage": "32",
   },
   "mounts": [
     "type=bind,source=${localWorkspaceFolder},target=${containerWorkspaceFolder}",
-    "type=bind,source=${HOME}/.ssh,target=/root/.ssh,readonly"
+    "type=bind,source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/root/.ssh,readonly"
   ],
   "forwardPorts": [
-    "6080:6080",
-    "2222:2222",
-    "3001:3001"
+    "vnc:6080",
+    "ssh:2222",
   ],
   "portsAttributes": {
     "6080": {
       "onAutoForward": "openPreview",
       "label": "Desktop",
-    },
-    "3000": {
-      "onAutoForward": "notify",
-      "elevateIfNeeded": true,
-      "label": "client"
+      requireLocalPort: true
     },
     "2222": {
       "onAutoForward": "notify",
-      "label": "ssh"
+      "label": "ssh",
+      requireLocalPort: true
     }
   },
   "containerEnv": {
@@ -54,6 +50,7 @@
     "ghcr.io/devcontainers/features/desktop-lite:1": {
       "password": "test",
       "webPort": "6080",
+      "vncPort": "5901"
     }
   },
   "customizations": {
@@ -71,6 +68,7 @@
         "enkia.tokyo-night",
       ],
       "settings": {
+        "workbench.settings.editor": "json",
         "npm.autoDetect": false,
         "telemetry.enableTelemetry": false,
         "search.exclude": {
@@ -85,7 +83,6 @@
         },
         "workbench.colorTheme": "Tokyo Night Storm",
         "workbench.iconTheme": "eq-material-theme-icons-darker",
-        "workbench.settings.editor": "json",
         "terminal.integrated.allowChords": true,
         "terminal.integrated.shellIntegration.history": true,
         "security.workspace.trust.untrustedFiles": "open",
