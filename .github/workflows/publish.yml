@@ -1,0 +1,39 @@
+name: Publish Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          repository: anataliocs/Stellar-Quest-3-Jekyll
+          path: jekyll-source
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Install Jekyll and Bundler
+        run: |
+          gem install jekyll bundler
+          cd jekyll-source && bundle install
+
+      - name: Build Jekyll site
+        run: |
+          cd jekyll-source
+          bundle exec jekyll build -d ../jekyll-build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./jekyll-build
