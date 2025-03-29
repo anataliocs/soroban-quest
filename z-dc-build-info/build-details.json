@@ -629,3 +629,103 @@
         }
     }
 ]
+[
+    {
+        "Id": "sha256:4b3d34f660c9159aec8aa4d07f651f3f2a86d2846d10fb2fd3537e3e33fc929d",
+        "RepoTags": [
+            "vsc-soroban-quest-b12b92e7a3b8a364f92f6a2c005830943284b8d291c58ca2737d032cd38007b7:latest"
+        ],
+        "RepoDigests": [
+            "vsc-soroban-quest-b12b92e7a3b8a364f92f6a2c005830943284b8d291c58ca2737d032cd38007b7@sha256:4b3d34f660c9159aec8aa4d07f651f3f2a86d2846d10fb2fd3537e3e33fc929d"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-03-29T22:58:14.300103596Z",
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/cargo/bin:/usr/local/cargo/bin:/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "RUSTUP_HOME=/usr/local/rustup",
+                "CARGO_HOME=/usr/local/cargo",
+                "RUST_VERSION=1.85.0",
+                "CARGO_INCREMENTAL=0",
+                "RUSTFLAGS=-C target-cpu=native",
+                "DISPLAY=:1"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/workspace/soroban-quest",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "dev.containers.id": "rust",
+                "dev.containers.release": "v0.4.11",
+                "dev.containers.source": "https://github.com/devcontainers/images",
+                "dev.containers.timestamp": "Mon, 17 Mar 2025 16:55:20 GMT",
+                "dev.containers.variant": "bullseye",
+                "devcontainer.metadata": "[ {\"id\":\"ghcr.io/devcontainers/features/common-utils:2\"}, {\"id\":\"ghcr.io/devcontainers/features/git:1\"}, {\"id\":\"ghcr.io/devcontainers/features/rust:1\",\"capAdd\":[\"SYS_PTRACE\"],\"securityOpt\":[\"seccomp=unconfined\"],\"customizations\":{\"vscode\":{\"extensions\":[\"vadimcn.vscode-lldb\",\"rust-lang.rust-analyzer\",\"tamasfe.even-better-toml\"],\"settings\":{\"files.watcherExclude\":{\"**/target/**\":true}}}}}, {\"remoteUser\":\"vscode\"}, {\"id\":\"ghcr.io/devcontainers-extra/features/act:1\"}, {\"id\":\"ghcr.io/devcontainers-extra/features/dnote:1\"}, {\"id\":\"ghcr.io/devcontainers-extra/features/wireguard-apt-get:1\"}, {\"id\":\"ghcr.io/devcontainers/features/common-utils:2\"}, {\"id\":\"ghcr.io/devcontainers/features/desktop-lite:1\",\"init\":true,\"entrypoint\":\"/usr/local/share/desktop-init.sh\"}, {\"id\":\"ghcr.io/devcontainers/features/rust:1\",\"capAdd\":[\"SYS_PTRACE\"],\"securityOpt\":[\"seccomp=unconfined\"],\"customizations\":{\"vscode\":{\"extensions\":[\"vadimcn.vscode-lldb\",\"rust-lang.rust-analyzer\",\"tamasfe.even-better-toml\"],\"settings\":{\"files.watcherExclude\":{\"**/target/**\":true}}}}}, {\"id\":\"ghcr.io/devcontainers/features/sshd:1\",\"entrypoint\":\"/usr/local/share/ssh-init.sh\"}, {\"onCreateCommand\":\".devcontainer/onCreate.sh\",\"updateContentCommand\":{\"dotfiles\":\".devcontainer/updateContentDotfile.sh\",\"brew\":\".devcontainers/updateContentCargo.sh\"},\"postCreateCommand\":\".devcontainer/postCreate.sh\",\"postStartCommand\":\".devcontainer/postStart.sh\",\"postAttachCommand\":{\"post\":\".devcontainer/postAttach.sh\",\"log-deps\":\".devcontainer/postAttachDepLog.sh\"},\"customizations\":{\"codespaces\":{\"openFiles\":[\"README.md\"]},\"vscode\":{\"extensions\":[\"rust-lang.rust-analyzer\",\"aaron-bond.better-comments\",\"Gruntfuggly.todo-tree\",\"Equinusocio.vsc-material-theme-icons\",\"enkia.tokyo-night\"],\"settings\":{\"workbench.settings.editor\":\"json\",\"npm.autoDetect\":false,\"telemetry.enableTelemetry\":false,\"search.exclude\":{\"**/target\":true,\"**/vscode/bin/\":true},\"files.watcherExclude\":{\"**/.git/objects/**\":true,\"**/.git/subtree-cache/**\":true,\"**/target\":true,\"**/vscode/bin/\":true},\"workbench.colorTheme\":\"Tokyo Night Storm\",\"workbench.iconTheme\":\"eq-material-theme-icons-darker\",\"terminal.integrated.allowChords\":true,\"terminal.integrated.shellIntegration.history\":true,\"security.workspace.trust.untrustedFiles\":\"open\",\"todo-tree.general.statusBar\":\"total\",\"todo-tree.general.showActivityBarBadge\":true,\"todo-tree.general.showIconsInsteadOfTagsInStatusBar\":true,\"todo-tree.general.tags\":[\"<>QUEST\",\"<>TASK\",\"<>CHALLENGE\"],\"todo-tree.tree.expanded\":true,\"todo-tree.tree.flat\":true,\"todo-tree.highlights.backgroundColourScheme\":[\"purple\",\"blue\",\"green\"],\"todo-tree.tree.showCountsInTree\":true}}},\"mounts\":[\"type=bind,source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/${remoteEnv:HOME}/.ssh,readonly\"],\"containerEnv\":{},\"remoteUser\":\"vscode\",\"remoteEnv\":{\"SOROBAN_RPC_URL\":\"https://soroban-testnet.stellar.org\",\"SOROBAN_NETWORK_PASSPHRASE\":\"Test SDF Network ; September 2015\",\"DISCORD_SERVER_ID\":\"897514728459468821\",\"DISCORD_CHANNEL_ID\":\"897514728459468821\",\"BUILD_LOG_FILE\":\"${containerWorkspaceFolder}/log/devcontainer/devcontainer_build.log\",\"DEP_LOG_FILE\":\"${containerWorkspaceFolder}/log/devcontainer/dependencies.log\"},\"portsAttributes\":{\"2222\":{\"onAutoForward\":\"notify\",\"label\":\"ssh\",\"requireLocalPort\":true},\"6080\":{\"onAutoForward\":\"openPreview\",\"label\":\"Desktop\",\"requireLocalPort\":true}},\"forwardPorts\":[6080,2222],\"hostRequirements\":{\"cpus\":4,\"memory\":\"16\",\"storage\":\"32\"}} ]",
+                "org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust",
+                "version": "1.0.21"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1451905313,
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:ddb64f5a9e888c493467d08ccedb18895c2bf2bb6513e3876ae3cb8887635a0d",
+                "sha256:79e559c16281d1a4bf69677b039853d53e60ce99043bc4ce072d6c745208f47a",
+                "sha256:110e7edfab1245b04dd3bb92c7892bf476b4c0c515e777400f9ab26be34e9891",
+                "sha256:56e48371eb4d7ce9fe3797f83094ea7543b5d1971a1c529f5368c38e50a0ca25",
+                "sha256:df0d5dd0e28da5133b74a8aa1570b1927f29e9c6caabebf257d221e25aab6d66",
+                "sha256:6df768479f670806caf32218d237e55f910727366fa1b8199b969d30e25c1132",
+                "sha256:15122f6de29999cb272e557db8b8bbec4c42b14eaee05d73b8429d72ed24e774",
+                "sha256:92672ba50ec56aaf44bc5d13b5e30df9da3b6d510351403e80e7b4b330f5bfc5",
+                "sha256:bffe0a959c576c650731863ac3a08eb63803e74a927bf40bb273f45477283699",
+                "sha256:ab9689d78aab0570b39a5abe7c1591fad13076c4c5c9d7d3c4016747ea0a6f52",
+                "sha256:e8aae5834ba50a300aba9e712015d270b6576bbb4a761bec7fc4010e8790301c",
+                "sha256:1f426312a4ae8d2ab7870c4154f665f6dcc5e774db7fd8afb9ba994220138b69",
+                "sha256:33b3e826f5c1346d974c59fdf533571b6b1bd323c8b469b6a9a219b7cf15249b",
+                "sha256:35974d7f5c27ff3a4828b96d9164620def187c178c4073046285320af10aae1e",
+                "sha256:88966ed87795fecda43956aca008b877c507675841371b265df047e5e9cfea63",
+                "sha256:3030ad50d02c6fb31fdc791d2e8ab4368dce7ede93c555559b9ad9a368aeac77",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:a05be1db07076ddd3287fd81b5eac8970fcf4f2b0deb2e2e20860d9eeab460ae",
+                "sha256:785c0217487f12f7ca6ba4278e73e9435a653ff0ffbf2f33c49d40ffb681ee6c",
+                "sha256:ca6059fb48981bcfa2aa28041afda7abd0dac09d5a9971f2aa4ba6b5b88fc907",
+                "sha256:be059573ab5345e2ce46fe189f0c4de16be523ef883ef4967ae35d412df69d64",
+                "sha256:1be3ce532ab23a45fa1963fd5e05f8d433cd1cde1ac1131b614cc74240e92d83",
+                "sha256:e2e63832f788e139552887df9eaba2be9a821cfa0358db79629faaf94b04b953",
+                "sha256:46347e464fa6e0f922f192ac099af20c9604ee8e8853e3d777b7197c8a556238",
+                "sha256:c68617765d4d94437aa1c4ee156a2dd1fb33ae933dfaa9d79ac0b66614a783c6",
+                "sha256:1ee81271b654e725e699b68e4cb436afbb3620b07e1690c5fd8df1240e0754c4"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2025-03-29T22:58:32.565097132Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:4b3d34f660c9159aec8aa4d07f651f3f2a86d2846d10fb2fd3537e3e33fc929d",
+            "size": 856
+        }
+    }
+]
