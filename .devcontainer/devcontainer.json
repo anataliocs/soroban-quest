@@ -43,10 +43,10 @@
     "SOROBAN_NETWORK_PASSPHRASE": "Test SDF Network ; September 2015",
     "DISCORD_SERVER_ID": "897514728459468821",
     "DISCORD_CHANNEL_ID": "897514728459468821",
+    "BUILD_LOG_FILE": "${containerWorkspaceFolder}/log/devcontainer/devcontainer_build.log",
+    "DEP_LOG_FILE": "${containerWorkspaceFolder}/log/devcontainer/dependencies.log"
   },
   "containerEnv": {
-    "BUILD_LOG_FILE": "${containerWorkspaceFolder}/var/log/devcontainer/devcontainer_build.log",
-    "DEP_LOG_FILE": "${containerWorkspaceFolder}/var/log/devcontainer/dependencies.log"
   },
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {},
@@ -127,6 +127,6 @@
   "postStartCommand": ".devcontainer/postStart.sh",
   "postAttachCommand": {
     "post": ".devcontainer/postAttach.sh",
-    "log-deps": ".devcontainer/dependencyLog.sh"
+    "log-deps": ".devcontainer/postAttachDepLog.sh"
   }
 }

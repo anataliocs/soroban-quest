@@ -6,9 +6,9 @@ ENV RUSTFLAGS='-C target-cpu=native'
 
 RUN echo ${containerWorkspaceFolder}
 
-RUN mkdir -p ${containerWorkspaceFolder}/var/log/devcontainer && \
-    touch ${containerWorkspaceFolder}/var/log/devcontainer/devcontainer_build.log && \
-    touch ${containerWorkspaceFolder}/var/log/devcontainer/dependencies.log && chmod -R 664 ${containerWorkspaceFolder}/var/log/devcontainer/*
+RUN mkdir -p ${containerWorkspaceFolder}/log/devcontainer && \
+    touch ${containerWorkspaceFolder}/log/devcontainer/devcontainer_build.log && \
+    touch ${containerWorkspaceFolder}/log/devcontainer/dependencies.log && chmod -R 664 ${containerWorkspaceFolder}/var/log/devcontainer/*
 
 
 
