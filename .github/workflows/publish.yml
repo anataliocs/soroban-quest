@@ -18,10 +18,14 @@ on:
         options:
           - warning
           - debug
-      print_tags:
-        description: 'Print tags to STDOUT?'
+      pageTemplate:
+        description: 'Page Template'
         required: true
-        type: boolean  
+        default: 'anataliocs/Stellar-Quest-3-Jekyll'
+        type: choice
+        options:
+          - 'anataliocs/Stellar-Quest-3-Jekyll'
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -42,7 +46,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          repository: 'anataliocs/Stellar-Quest-3-Jekyll'
+          repository: ${{ inputs.pageTemplate }}
       - name: Setup Ruby
         # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
         uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
