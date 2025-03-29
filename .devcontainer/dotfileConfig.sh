@@ -16,17 +16,24 @@ if [ -e .devcontainer/dotfiles/launch.json ]; then
 fi
 
 if [ -e .devcontainer/dotfiles/.bashrc ]; then
-  mv -n .devcontainer/dotfiles/.bashrc "$HOME"/
+  mv -n .devcontainer/dotfiles/.bashrc "${remoteEnv:HOME}"/
 fi
 
 if [ -e .devcontainer/dotfiles/.zshrc ]; then
-  mv -n .devcontainer/dotfiles/.zshrc "$HOME"/
+  mv -n .devcontainer/dotfiles/.zshrc "${remoteEnv:HOME}"/
 fi
 
 if [ -e .devcontainer/dotfiles/dnote.db ]; then
-  mv -n .devcontainer/dotfiles/dnote.db "$HOME"/
+  mv -n .devcontainer/dotfiles/dnote.db "${remoteEnv:HOME}"/.dnote
 fi
 
 if [ -e .devcontainer/dotfiles/.fluxbox/menu ]; then
-  mv -n .devcontainer/dotfiles/.fluxbox/menu "$HOME"/.fluxbox
+  mv -n .devcontainer/dotfiles/.fluxbox/menu "${remoteEnv:HOME}"/.fluxbox
+fi
+
+# Check the exit status and provide informative output
+if [ $? -eq 0 ]; then
+  echo "✅ dotfileConfig.sh executed successfully" >>"${containerEnv:BUILD_LOG_FILE}"
+else
+  echo "❌ Error executing dotfileConfig.sh " >>"${containerEnv:BUILD_LOG_FILE}"
 fi

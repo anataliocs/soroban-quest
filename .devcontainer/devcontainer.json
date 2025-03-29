@@ -3,6 +3,17 @@
   "dockerFile": "Dockerfile",
   "context": "..",
   "remoteUser": "vscode",
+  "build": {
+    "cacheFrom": [
+      "chrisstellar/vsc-soroban-quest-b12b9-prebuild:latest"
+    ],
+    "options": [
+      "--platform=linux/amd64"
+    ],
+    "args": {
+      "DEBIAN_VERSION": "bullseye"
+    }
+  },
   "hostRequirements": {
     "cpus": 4,
     "memory": "16",
@@ -27,12 +38,14 @@
       "requireLocalPort": true
     }
   },
-  "containerEnv": {
+  "remoteEnv": {
     "SOROBAN_RPC_URL": "https://soroban-testnet.stellar.org",
     "SOROBAN_NETWORK_PASSPHRASE": "Test SDF Network ; September 2015",
     "DISCORD_SERVER_ID": "897514728459468821",
     "DISCORD_CHANNEL_ID": "897514728459468821",
-    "CONTAINER_ID": "${devcontainerId}"
+  },
+  "containerEnv": {
+    "BUILD_LOG_FILE": "/var/log/devcontainer_build.log"
   },
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {},
@@ -111,14 +124,7 @@
   "postAttachCommand": ".devcontainer/postAttach.sh",
   "updateContentCommand": {
     "dotfiles": ".devcontainer/dotConfig.sh",
-    "brew": ".devcontainers/brew.sh"
-  },
-  "build": {
-    "options": [
-      "--platform=linux/amd64"
-    ],
-    "args": {
-      "DEBIAN_VERSION": "bullseye"
-    }
+    "brew": ".devcontainers/brew.sh",
+    "log": "echo ${containerEnv:BUILD_LOG_FILE}"
   }
 }
