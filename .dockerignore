@@ -46,3 +46,7 @@ Thumbs.db
 .env
 
 .devpod-internal
+build-details.json
+build-local.sh
+facilitators.md
+build.md
