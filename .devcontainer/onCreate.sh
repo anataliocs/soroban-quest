@@ -15,7 +15,7 @@ sudo apt-get update && sudo apt-get install -y doppler
 
 # Check the exit status and provide informative output
 if [ $? -eq 0 ]; then
-  echo "✅ onCreate() executed successfully" >>"${containerEnv:BUILD_LOG_FILE}"
+  echo "✅ onCreate() executed successfully"
 else
-  echo "❌ Error executing onCreate(). " >>"${containerEnv:BUILD_LOG_FILE}"
+  echo "❌ Error executing onCreate(). "
 fi
