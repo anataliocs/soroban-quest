@@ -10,8 +10,9 @@ echo "Build Results:"
 echo "${remoteEnv:BUILD_LOG_FILE}"
 
 # Check the exit status and provide informative output
-if [ $? -eq 0 ]; then
-  echo "✅ postAttach.sh executed successfully" >>"${remoteEnv:BUILD_LOG_FILE}"
+if [ $? -eq 0 ] && [ -f "${remoteEnv:BUILD_LOG_FILE}" ]; then
+  echo "✅ postAttach() executed successfully" >>"${remoteEnv:BUILD_LOG_FILE}"
 else
-  echo "❌ Error executing postAttach.sh " >>"${remoteEnv:BUILD_LOG_FILE}"
+  echo "❌ Error executing postAttach() "
+  echo "${remoteEnv:BUILD_LOG_FILE}"
 fi

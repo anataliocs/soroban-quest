@@ -46,8 +46,6 @@
     "BUILD_LOG_FILE": "${containerWorkspaceFolder}/log/devcontainer/devcontainer_build.log",
     "DEP_LOG_FILE": "${containerWorkspaceFolder}/log/devcontainer/dependencies.log"
   },
-  "containerEnv": {
-  },
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {},
     "ghcr.io/devcontainers/features/sshd:1": {},

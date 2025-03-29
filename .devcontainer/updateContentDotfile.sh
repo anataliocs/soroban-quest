@@ -32,8 +32,9 @@ if [ -e .devcontainer/dotfiles/.fluxbox/menu ]; then
 fi
 
 # Check the exit status and provide informative output
-if [ $? -eq 0 ]; then
-  echo "✅ dotfileConfig.sh executed successfully" >>"${containerEnv:BUILD_LOG_FILE}"
+if [ $? -eq 0 ] && [ -f "${remoteEnv:BUILD_LOG_FILE}" ]; then
+  echo "✅ updateContentDotfile() executed successfully" >>"${remoteEnv:BUILD_LOG_FILE}"
 else
-  echo "❌ Error executing dotfileConfig.sh " >>"${containerEnv:BUILD_LOG_FILE}"
+  echo "❌ Error executing postAttach() "
+  echo "${remoteEnv:BUILD_LOG_FILE}"
 fi

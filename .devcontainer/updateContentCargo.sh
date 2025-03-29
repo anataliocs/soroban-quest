@@ -10,8 +10,9 @@ echo "Installed Stellar CLI"
 #echo "Installed OAuth2 CLI"
 
 # Check the exit status and provide informative output
-if [ $? -eq 0 ]; then
-  echo "✅ brew.sh executed successfully" >>"${remoteEnv:BUILD_LOG_FILE}"
+if [ $? -eq 0 ] && [ -f "${remoteEnv:BUILD_LOG_FILE}" ]; then
+  echo "✅ updateContentCargo() executed successfully" >>"${remoteEnv:BUILD_LOG_FILE}"
 else
-  echo "❌ Error executing brew.sh " >>"${remoteEnv:BUILD_LOG_FILE}"
+  echo "❌ Error executing postAttach() "
+  echo "${remoteEnv:BUILD_LOG_FILE}"
 fi
