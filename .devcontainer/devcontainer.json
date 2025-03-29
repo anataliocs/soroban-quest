@@ -45,8 +45,8 @@
     "DISCORD_CHANNEL_ID": "897514728459468821",
   },
   "containerEnv": {
-    "BUILD_LOG_FILE": "${containerEnv:PATH}/var/log/devcontainer_build.log",
-    "DEP_LOG_FILE": "${containerEnv:PATH}/var/log/dependencies.log"
+    "BUILD_LOG_FILE": "${containerWorkspaceFolder}/var/log/devcontainer/devcontainer_build.log",
+    "DEP_LOG_FILE": "${containerWorkspaceFolder}/var/log/devcontainer/dependencies.log"
   },
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {},

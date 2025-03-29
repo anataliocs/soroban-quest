@@ -9,7 +9,7 @@ CONFIG_FILE="devcontainer.json"
 # Prebuild image on dockerhub https://hub.docker.com/repository/docker/chrisstellar/vsc-soroban-quest-b12b9-prebuild/general
 PRE_BUILD_IMAGE="chrisstellar/vsc-soroban-quest-b12b9-prebuild"
 
-BUILD_DETAILS="build-details.json"
+BUILD_DETAILS="z-dc-build-info/build-details.json"
 
 # Build the devcontainer
 output=$(devcontainer build \

@@ -4,8 +4,12 @@ FROM mcr.microsoft.com/devcontainers/rust:bullseye
 ENV CARGO_INCREMENTAL=0
 ENV RUSTFLAGS='-C target-cpu=native'
 
-RUN touch "${containerEnv:PATH}/log/devcontainer_build.log" && \
-  touch "${containerEnv:PATH}/log/dependencies.log" && \
+RUN echo ${containerWorkspaceFolder}
+
+RUN mkdir -p ${containerWorkspaceFolder}/var/log/devcontainer && \
+    touch ${containerWorkspaceFolder}/var/log/devcontainer/devcontainer_build.log && \
+    touch ${containerWorkspaceFolder}/var/log/devcontainer/dependencies.log && chmod -R 664 ${containerWorkspaceFolder}/var/log/devcontainer/*
+
 
 
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive && apt-get install -y firefox-esr && \
