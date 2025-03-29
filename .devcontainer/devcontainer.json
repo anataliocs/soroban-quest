@@ -51,7 +51,6 @@
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {},
     "ghcr.io/devcontainers/features/sshd:1": {},
-    "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {},
     "ghcr.io/devcontainers/features/rust:1": {
       "targets": "wasm32-unknown-unknown",
       "profile": "default",
@@ -120,8 +119,8 @@
   "initializeCommand": ".devcontainer/init.sh",
   "onCreateCommand": ".devcontainer/onCreate.sh",
   "updateContentCommand": {
-    "dotfiles": ".devcontainer/dotConfig.sh",
-    "brew": ".devcontainers/brew.sh",
+    "dotfiles": ".devcontainer/updateContentDotfile.sh",
+    "brew": ".devcontainers/updateContentCargo.sh",
   },
   "postCreateCommand": ".devcontainer/postCreate.sh",
   "postStartCommand": ".devcontainer/postStart.sh",
