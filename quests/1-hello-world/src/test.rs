@@ -3,9 +3,14 @@
 use crate::{HelloContract, HelloContractClient};
 use soroban_sdk::{symbol_short, vec, Env};
 
-// The purpose of this file is to run automated tests on the contract code we've
-// written in `lib.rs`. Writing tests can be quite a big topic, and we'll dive
-// in further in a future quest. Just you wait!
+/*
+    _
+   / \   _ __ ___ _ __   __ _
+  / _ \ | '__/ _ \ '_ \ / _` |
+ / ___ \| | |  __/ | | | (_| |
+/_/   \_\_|  \___|_| |_|\__,_|
+ */
+
 #[test]
 fn test() {
     // We register the contract in a Soroban environment, and build a client we
