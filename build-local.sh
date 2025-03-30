@@ -15,7 +15,6 @@ BUILD_DETAILS="z-dc-build-info/build-details.json"
 output=$(devcontainer build \
   --workspace-folder . \
   --config $DEVCONTAINER_DIR/$CONFIG_FILE \
-  --log-level debug \
   --cache-from $PRE_BUILD_IMAGE:latest)
 
 #--dotfiles-repository

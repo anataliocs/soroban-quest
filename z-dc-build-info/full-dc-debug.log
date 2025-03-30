@@ -1,5 +1,3 @@
-~/projects/soroban-quest git:[main]
-./build-local.sh
 [2025-03-29T22:32:46.113Z] @devcontainers/cli 0.75.0. Node.js v23.10.0. darwin 24.3.0 arm64.
 [2025-03-29T22:32:46.113Z] Start: Run: docker buildx version
 [2025-03-29T22:32:46.160Z] Stop (47 ms): Run: docker buildx version
@@ -90,8 +88,6 @@
 
 #7 importing cache manifest from chrisstellar/vsc-soroban-quest-b12b9-prebuild:latest
 
-[2025-03-29T22:32:51.606Z] #7 ...
-
 #8 [context dev_containers_feature_content_source] load from client
 #8 DONE 0.0s
 
@@ -105,9 +101,6 @@
 
 [2025-03-29T22:32:51.886Z] #7 inferred cache manifest type: application/vnd.oci.image.index.v1+json done
 
-[2025-03-29T22:32:52.463Z] #7 DONE 1.0s
-
-[2025-03-29T22:32:52.639Z]
 #10 [dev_container_auto_added_stage_label 2/4] WORKDIR /workspace/soroban-quest
 #10 CACHED
 
@@ -133,13 +126,6 @@
 [2025-03-29T22:33:12.902Z] #12 20.26 Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [353 kB]
 
 [2025-03-29T22:33:14.748Z] #12 22.11 Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [18.8 kB]
-
-[2025-03-29T22:33:14.857Z] #12 22.22 Fetched 8625 kB in 22s (392 kB/s)
-#12 22.22 Reading package lists...
-[2025-03-29T22:33:15.171Z]
-
-[2025-03-29T22:33:15.392Z] #12 22.60 Reading package lists...
-[2025-03-29T22:33:15.533Z]
 
 [2025-03-29T22:33:15.699Z] #12 22.91 Building dependency tree...
 #12 22.98 Reading state information...
@@ -1703,26 +1689,7 @@
             22:45:40.815Z]
 [2025-03-29T22:45:40.949Z] Hit:1 http://deb.debian.org/debian bullseye InRelease
 Hit:2 http://deb.debian.org/debian-security bullseye-security InRelease
-0% [Working]
-Hit:3 http://deb.debian.org/debian bullseye-updates InRelease
-0% [Working]
-0% [Working]22:45:41.462Z]
-0% [Working]22:45:41.676Z]
-0% [Working]22:45:42.026Z]
-0% [Working]22:45:42.201Z]
-0% [Working]22:45:42.704Z]
-20% [Working]2:45:42.873Z]
-Reading package lists... 0%
-Reading package lists... 94%
-Reading package lists... Done
-#20 112.1 apt-get install -y --no-install-recommends wireguard
-Reading package lists... 0%
-Reading package lists... 0%
-Reading package lists... 94%
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... 0%
-Reading state information... Done
+
 #20 112.7 The following additional packages will be installed:
 #20 112.7   cpio initramfs-tools initramfs-tools-core klibc-utils kmod libklibc
 #20 112.7   linux-base linux-image-6.1-rt-amd64 linux-image-6.1.0-0.deb11.31-rt-amd64
@@ -1743,18 +1710,7 @@ Reading state information... Done
 #20 112.8 Need to get 76.5 MB of archives.
 #20 112.8 After this operation, 546 MB of additional disk space will be used.
 Get:1 http://deb.debian.org/debian bullseye/main amd64 cpio amd64 2.13+dfsg-7.1~deb11u1 [245 kB]
-0% [1 cpio 2103 B/245 kB 1%]
-0% [1 cpio 92.2 kB/245 kB 38%]
-Get:2 http://deb.debian.org/debian bullseye/main amd64 kmod amd64 28-1 [92.8 kB]
-2% [2 kmod 2784 B/92.8 kB 3%]
-Get:3 http://deb.debian.org/debian-security bullseye-security/main amd64 udev amd64 247.3-7+deb11u6 [1465 kB]
-4% [3 udev 5267 B/1465 kB 0%]
-4% [3 udev 229 kB/1465 kB 16%]
-4% [3 udev 402 kB/1465 kB 27%]
-4% [3 udev 646 kB/1465 kB 44%]
-5% [3 udev 882 kB/1465 kB 60%]
-5% [3 udev 1104 kB/1465 kB 75%]
-5% [3 udev 1335 kB/1465 kB 91%]
+
 Get:4 http://deb.debian.org/debian bullseye/main amd64 libklibc amd64 2.0.8-6.1 [56.6 kB]
 7% [4 libklibc 2911 B/56.6 kB 5%]
 Get:5 http://deb.debian.org/debian bullseye/main amd64 klibc-utils amd64 2.0.8-6.1 [94.4 kB]
@@ -1766,337 +1722,7 @@ Get:7 http://deb.debian.org/debian bullseye/main amd64 linux-base all 4.6 [32.4 
 Get:8 http://deb.debian.org/debian bullseye/main amd64 initramfs-tools all 0.140 [71.7 kB]
 14% [8 initramfs-tools 5081 B/71.7 kB 7%]
 Get:9 http://deb.debian.org/debian-security bullseye-security/main amd64 linux-image-6.1.0-0.deb11.31-rt-amd64 amd64 6.1.128-1~deb11u1 [74.2 MB]
-16% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 828 B/74.2 MB 0%]
-16% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 219 kB/74.2 MB 0%]
-16% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 453 kB/74.2 MB 1%]
-16% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 695 kB/74.2 MB 1%]
-17% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 940 kB/74.2 MB 1%]
-17% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 1180 kB/74.2 MB 2%]
-17% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 1400 kB/74.2 MB 2%]
-17% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 1613 kB/74.2 MB 2%]
-18% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 1856 kB/74.2 MB 3%]
-18% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 2083 kB/74.2 MB 3%]
-18% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 2313 kB/74.2 MB 3%]
-18% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 2527 kB/74.2 MB 3%]
-18% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 2771 kB/74.2 MB 4%]
-19% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 2980 kB/74.2 MB 4%]
-19% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 3179 kB/74.2 MB 4%]
-19% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 3408 kB/74.2 MB 5%]
-19% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 3631 kB/74.2 MB 5%]
-20% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 3837 kB/74.2 MB 5%]
-20% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 3981 kB/74.2 MB 5%]
-20% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 4196 kB/74.2 MB 6%]
-20% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 4329 kB/74.2 MB 6%]
-20% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 4532 kB/74.2 MB 6%]
-21% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 4736 kB/74.2 MB 6%]
-21% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 4956 kB/74.2 MB 7%]
-21% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 5082 kB/74.2 MB 7%]
-21% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 5289 kB/74.2 MB 7%]
-21% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 5530 kB/74.2 MB 7%]
-22% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 5666 kB/74.2 MB 8%]
-22% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 5808 kB/74.2 MB 8%]
-22% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 6031 kB/74.2 MB 8%]
-22% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 6266 kB/74.2 MB 8%]
-22% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 6490 kB/74.2 MB 9%]
-23% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 6728 kB/74.2 MB 9%]
-23% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 6958 kB/74.2 MB 9%]
-23% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 7191 kB/74.2 MB 10%]
-23% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 7454 kB/74.2 MB 10%]
-24% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 7683 kB/74.2 MB 10%]
-24% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 7909 kB/74.2 MB 11%]
-24% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 8161 kB/74.2 MB 11%]
-24% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 8400 kB/74.2 MB 11%]
-25% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 8641 kB/74.2 MB 12%]
-25% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 8890 kB/74.2 MB 12%]
-25% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 9138 kB/74.2 MB 12%]
-25% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 9345 kB/74.2 MB 13%]
-26% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 9608 kB/74.2 MB 13%]
-26% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 9831 kB/74.2 MB 13%]
-26% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 10.0 MB/74.2 MB 14%]
-26% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 10.3 MB/74.2 MB 14%]
-27% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 10.5 MB/74.2 MB 14%]
-27% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 10.8 MB/74.2 MB 15%]
-27% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 11.0 MB/74.2 MB 15%]
-27% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 11.3 MB/74.2 MB 15%]
-28% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 11.5 MB/74.2 MB 16%]
-28% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 11.8 MB/74.2 MB 16%]
-28% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 12.0 MB/74.2 MB 16%]
-28% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 12.2 MB/74.2 MB 16%]
-29% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 12.5 MB/74.2 MB 17%]
-29% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 12.7 MB/74.2 MB 17%]
-29% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 12.9 MB/74.2 MB 17%]
-29% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 13.2 MB/74.2 MB 18%]
-30% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 13.4 MB/74.2 MB 18%]
-30% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 13.7 MB/74.2 MB 18%]
-30% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 13.9 MB/74.2 MB 19%]
-30% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 14.1 MB/74.2 MB 19%]
-31% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 14.4 MB/74.2 MB 19%]
-31% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 14.6 MB/74.2 MB 20%]
-31% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 14.8 MB/74.2 MB 20%]
-31% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 15.1 MB/74.2 MB 20%]
-32% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 15.3 MB/74.2 MB 21%]
-32% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 15.5 MB/74.2 MB 21%]
-32% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 15.8 MB/74.2 MB 21%]
-32% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 16.0 MB/74.2 MB 22%]
-33% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 16.2 MB/74.2 MB 22%]
-33% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 16.5 MB/74.2 MB 22%]
-33% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 16.6 MB/74.2 MB 22%]
-33% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 16.9 MB/74.2 MB 23%]
-33% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 17.1 MB/74.2 MB 23%]
-34% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 17.3 MB/74.2 MB 23%]
-34% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 17.6 MB/74.2 MB 24%]
-34% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 17.8 MB/74.2 MB 24%]
-34% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 18.0 MB/74.2 MB 24%]
-35% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 18.2 MB/74.2 MB 25%]
-35% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 18.5 MB/74.2 MB 25%]
-35% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 18.7 MB/74.2 MB 25%]
-35% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 18.9 MB/74.2 MB 25%]
-36% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 19.1 MB/74.2 MB 26%]
-36% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 19.3 MB/74.2 MB 26%]
-36% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 19.6 MB/74.2 MB 26%]
-36% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 19.8 MB/74.2 MB 27%]
-37% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 20.0 MB/74.2 MB 27%]
-37% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 20.3 MB/74.2 MB 27%]
-37% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 20.5 MB/74.2 MB 28%]
-37% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 20.7 MB/74.2 MB 28%]
-37% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 20.9 MB/74.2 MB 28%]
-38% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 21.2 MB/74.2 MB 29%]
-38% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 21.4 MB/74.2 MB 29%]
-38% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 21.6 MB/74.2 MB 29%]
-38% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 21.8 MB/74.2 MB 29%]
-39% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 22.0 MB/74.2 MB 30%]
-39% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 22.2 MB/74.2 MB 30%]
-39% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 22.4 MB/74.2 MB 30%]
-39% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 22.7 MB/74.2 MB 31%]
-40% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 22.9 MB/74.2 MB 31%]
-40% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 23.1 MB/74.2 MB 31%]
-40% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 23.3 MB/74.2 MB 31%]
-40% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 23.4 MB/74.2 MB 31%]
-40% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 23.5 MB/74.2 MB 32%]
-40% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 23.6 MB/74.2 MB 32%]
-40% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 23.7 MB/74.2 MB 32%]
-40% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 23.8 MB/74.2 MB 32%]
-41% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 24.0 MB/74.2 MB 32%]
-41% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 24.2 MB/74.2 MB 33%]
-41% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 24.4 MB/74.2 MB 33%]
-41% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 24.7 MB/74.2 MB 33%]
-42% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 24.9 MB/74.2 MB 34%]
-42% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 25.2 MB/74.2 MB 34%]
-42% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 25.4 MB/74.2 MB 34%]
-42% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 25.6 MB/74.2 MB 35%]
-43% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 25.9 MB/74.2 MB 35%]
-43% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 26.1 MB/74.2 MB 35%]
-43% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 26.3 MB/74.2 MB 35%]
-43% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 26.6 MB/74.2 MB 36%]
-44% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 26.8 MB/74.2 MB 36%]
-44% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 27.0 MB/74.2 MB 36%]
-44% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 27.3 MB/74.2 MB 37%]
-44% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 27.5 MB/74.2 MB 37%]
-45% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 27.7 MB/74.2 MB 37%]
-45% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 27.9 MB/74.2 MB 38%]
-45% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 28.1 MB/74.2 MB 38%]
-45% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 28.4 MB/74.2 MB 38%]
-46% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 28.6 MB/74.2 MB 39%]
-46% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 28.9 MB/74.2 MB 39%]
-46% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 29.1 MB/74.2 MB 39%]
-46% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 29.3 MB/74.2 MB 40%]
-47% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 29.6 MB/74.2 MB 40%]
-47% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 29.8 MB/74.2 MB 40%]
-47% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 30.0 MB/74.2 MB 40%]
-47% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 30.3 MB/74.2 MB 41%]
-47% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 30.5 MB/74.2 MB 41%]
-48% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 30.7 MB/74.2 MB 41%]
-48% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 30.9 MB/74.2 MB 42%]
-48% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 31.2 MB/74.2 MB 42%]
-48% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 31.4 MB/74.2 MB 42%]
-49% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 31.7 MB/74.2 MB 43%]
-49% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 31.9 MB/74.2 MB 43%]
-49% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 32.1 MB/74.2 MB 43%]
-49% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 32.4 MB/74.2 MB 44%]
-50% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 32.6 MB/74.2 MB 44%]
-50% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 32.8 MB/74.2 MB 44%]
-50% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 33.1 MB/74.2 MB 45%]
-50% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 33.3 MB/74.2 MB 45%]
-51% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 33.5 MB/74.2 MB 45%]
-51% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 33.7 MB/74.2 MB 45%]
-51% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 34.0 MB/74.2 MB 46%]
-51% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 34.2 MB/74.2 MB 46%]
-52% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 34.5 MB/74.2 MB 46%]
-52% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 34.7 MB/74.2 MB 47%]
-52% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 34.9 MB/74.2 MB 47%]
-52% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 35.2 MB/74.2 MB 47%]
-53% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 35.5 MB/74.2 MB 48%]
-53% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 35.6 MB/74.2 MB 48%]
-53% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 35.7 MB/74.2 MB 48%]
-53% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 36.0 MB/74.2 MB 48%]
-53% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 36.2 MB/74.2 MB 49%]
-54% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 36.3 MB/74.2 MB 49%]
-54% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 36.5 MB/74.2 MB 49%]
-54% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 36.7 MB/74.2 MB 49%]
-54% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 36.9 MB/74.2 MB 50%]
-54% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 37.2 MB/74.2 MB 50%]
-55% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 37.4 MB/74.2 MB 50%]
-55% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 37.7 MB/74.2 MB 51%]
-55% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 37.9 MB/74.2 MB 51%]
-55% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 38.1 MB/74.2 MB 51%]
-56% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 38.3 MB/74.2 MB 52%]
-56% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 38.6 MB/74.2 MB 52%]
-56% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 38.8 MB/74.2 MB 52%]
-56% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 39.1 MB/74.2 MB 53%]
-57% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 39.3 MB/74.2 MB 53%]
-57% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 39.5 MB/74.2 MB 53%]
-57% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 39.7 MB/74.2 MB 54%]
-57% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 40.0 MB/74.2 MB 54%]
-58% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 40.1 MB/74.2 MB 54%]
-58% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 40.3 MB/74.2 MB 54%]
-58% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 40.5 MB/74.2 MB 55%]
-58% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 40.8 MB/74.2 MB 55%]
-58% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 41.0 MB/74.2 MB 55%]
-59% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 41.2 MB/74.2 MB 56%]
-59% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 41.5 MB/74.2 MB 56%]
-59% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 41.7 MB/74.2 MB 56%]
-59% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 41.9 MB/74.2 MB 56%]
-60% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 42.1 MB/74.2 MB 57%]
-60% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 42.4 MB/74.2 MB 57%]
-60% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 42.6 MB/74.2 MB 57%]
-60% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 42.8 MB/74.2 MB 58%]
-61% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 43.0 MB/74.2 MB 58%]
-61% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 43.3 MB/74.2 MB 58%]
-61% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 43.5 MB/74.2 MB 59%]
-61% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 43.7 MB/74.2 MB 59%]
-62% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 43.9 MB/74.2 MB 59%]
-62% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 44.1 MB/74.2 MB 59%]
-62% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 44.4 MB/74.2 MB 60%]
-62% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 44.6 MB/74.2 MB 60%]
-62% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 44.8 MB/74.2 MB 60%]
-63% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 45.1 MB/74.2 MB 61%]
-63% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 45.3 MB/74.2 MB 61%]
-63% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 45.5 MB/74.2 MB 61%]
-63% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 45.8 MB/74.2 MB 62%]
-64% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 46.0 MB/74.2 MB 62%]
-64% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 46.2 MB/74.2 MB 62%]
-64% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 46.5 MB/74.2 MB 63%]  458 kB/s 60s
-64% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 46.7 MB/74.2 MB 63%]  458 kB/s 60s
-65% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 46.9 MB/74.2 MB 63%]  458 kB/s 59s
-65% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 47.2 MB/74.2 MB 64%]  458 kB/s 59s
-65% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 47.3 MB/74.2 MB 64%]  458 kB/s 58s
-65% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 47.6 MB/74.2 MB 64%]  458 kB/s 58s
-66% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 47.8 MB/74.2 MB 64%]  458 kB/s 57s
-66% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 48.1 MB/74.2 MB 65%]  458 kB/s 57s
-66% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 48.2 MB/74.2 MB 65%]  458 kB/s 57s
-66% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 48.5 MB/74.2 MB 65%]  441 kB/s 58s
-66% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 48.7 MB/74.2 MB 66%]  441 kB/s 58s
-67% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 48.9 MB/74.2 MB 66%]  441 kB/s 57s
-67% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 49.1 MB/74.2 MB 66%]  441 kB/s 57s
-67% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 49.4 MB/74.2 MB 66%]  441 kB/s 56s
-67% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 49.6 MB/74.2 MB 67%]  441 kB/s 56s
-68% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 49.8 MB/74.2 MB 67%]  441 kB/s 55s
-68% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 50.1 MB/74.2 MB 67%]  441 kB/s 54s
-68% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 50.3 MB/74.2 MB 68%]  441 kB/s 54s
-68% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 50.5 MB/74.2 MB 68%]  441 kB/s 53s
-69% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 50.8 MB/74.2 MB 68%]  441 kB/s 53s
-69% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 51.0 MB/74.2 MB 69%]  441 kB/s 52s
-69% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 51.3 MB/74.2 MB 69%]  464 kB/s 49s
-69% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 51.5 MB/74.2 MB 69%]  464 kB/s 49s
-70% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 51.7 MB/74.2 MB 70%]  464 kB/s 48s
-70% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 51.8 MB/74.2 MB 70%]  464 kB/s 48s
-70% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 52.0 MB/74.2 MB 70%]  464 kB/s 48s
-70% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 52.3 MB/74.2 MB 70%]  464 kB/s 47s
-71% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 52.5 MB/74.2 MB 71%]  464 kB/s 47s
-71% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 52.7 MB/74.2 MB 71%]  464 kB/s 46s
-71% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 53.0 MB/74.2 MB 71%]  464 kB/s 45s
-71% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 53.2 MB/74.2 MB 72%]  464 kB/s 45s
-71% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 53.4 MB/74.2 MB 72%]  464 kB/s 45s
-72% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 53.7 MB/74.2 MB 72%]  464 kB/s 44s
-72% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 53.9 MB/74.2 MB 73%]  439 kB/s 46s
-72% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 54.1 MB/74.2 MB 73%]  439 kB/s 45s
-72% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 54.3 MB/74.2 MB 73%]  439 kB/s 45s
-73% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 54.6 MB/74.2 MB 73%]  439 kB/s 45s
-73% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 54.8 MB/74.2 MB 74%]  439 kB/s 44s
-73% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 54.9 MB/74.2 MB 74%]  439 kB/s 44s
-73% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 55.2 MB/74.2 MB 74%]  439 kB/s 43s
-74% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 55.4 MB/74.2 MB 75%]  439 kB/s 43s
-74% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 55.6 MB/74.2 MB 75%]  439 kB/s 42s
-74% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 55.8 MB/74.2 MB 75%]  439 kB/s 42s
-74% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 56.1 MB/74.2 MB 76%]  439 kB/s 41s
-75% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 56.3 MB/74.2 MB 76%]  439 kB/s 40s
-75% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 56.6 MB/74.2 MB 76%]  444 kB/s 39s
-75% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 56.8 MB/74.2 MB 77%]  444 kB/s 39s
-75% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 57.1 MB/74.2 MB 77%]  444 kB/s 38s
-75% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 57.3 MB/74.2 MB 77%]  444 kB/s 38s
-76% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 57.5 MB/74.2 MB 77%]  444 kB/s 37s
-76% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 57.7 MB/74.2 MB 78%]  444 kB/s 37s
-76% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 58.0 MB/74.2 MB 78%]  444 kB/s 36s
-76% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 58.2 MB/74.2 MB 78%]  444 kB/s 36s
-77% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 58.5 MB/74.2 MB 79%]  444 kB/s 35s
-77% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 58.7 MB/74.2 MB 79%]  444 kB/s 35s
-77% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 59.0 MB/74.2 MB 79%]  444 kB/s 34s
-78% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 59.2 MB/74.2 MB 80%]  444 kB/s 34s
-78% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 59.5 MB/74.2 MB 80%]  481 kB/s 30s
-78% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 59.7 MB/74.2 MB 80%]  481 kB/s 30s
-78% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 60.0 MB/74.2 MB 81%]  481 kB/s 29s
-79% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 60.2 MB/74.2 MB 81%]  481 kB/s 29s
-79% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 60.4 MB/74.2 MB 81%]  481 kB/s 28s
-79% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 60.7 MB/74.2 MB 82%]  481 kB/s 28s
-79% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 60.9 MB/74.2 MB 82%]  481 kB/s 27s
-80% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 61.2 MB/74.2 MB 82%]  481 kB/s 27s
-80% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 61.4 MB/74.2 MB 83%]  481 kB/s 26s
-80% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 61.7 MB/74.2 MB 83%]  481 kB/s 26s
-80% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 61.9 MB/74.2 MB 83%]  481 kB/s 25s
-81% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 62.1 MB/74.2 MB 84%]  481 kB/s 25s
-81% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 62.3 MB/74.2 MB 84%]  476 kB/s 25s
-81% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 62.6 MB/74.2 MB 84%]  476 kB/s 24s
-81% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 62.8 MB/74.2 MB 85%]  476 kB/s 24s
-82% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 63.1 MB/74.2 MB 85%]  476 kB/s 23s
-82% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 63.3 MB/74.2 MB 85%]  476 kB/s 23s
-82% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 63.6 MB/74.2 MB 86%]  476 kB/s 22s
-82% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 63.8 MB/74.2 MB 86%]  476 kB/s 22s
-83% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 64.0 MB/74.2 MB 86%]  476 kB/s 21s
-83% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 64.2 MB/74.2 MB 86%]  476 kB/s 21s
-83% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 64.4 MB/74.2 MB 87%]  476 kB/s 20s
-83% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 64.5 MB/74.2 MB 87%]  476 kB/s 20s
-83% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 64.7 MB/74.2 MB 87%]  476 kB/s 20s
-84% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 65.0 MB/74.2 MB 88%]  437 kB/s 21s
-84% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 65.2 MB/74.2 MB 88%]  437 kB/s 20s
-84% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 65.4 MB/74.2 MB 88%]  437 kB/s 20s
-84% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 65.7 MB/74.2 MB 88%]  437 kB/s 19s
-84% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 65.8 MB/74.2 MB 89%]  437 kB/s 19s
-85% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 66.1 MB/74.2 MB 89%]  437 kB/s 18s
-85% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 66.3 MB/74.2 MB 89%]  437 kB/s 18s
-85% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 66.5 MB/74.2 MB 90%]  437 kB/s 17s
-85% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 66.8 MB/74.2 MB 90%]  437 kB/s 17s
-86% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 67.0 MB/74.2 MB 90%]  437 kB/s 16s
-86% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 67.3 MB/74.2 MB 91%]  437 kB/s 16s
-86% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 67.5 MB/74.2 MB 91%]  437 kB/s 15s
-86% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 67.7 MB/74.2 MB 91%]  457 kB/s 14s
-87% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 68.0 MB/74.2 MB 92%]  457 kB/s 13s
-87% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 68.2 MB/74.2 MB 92%]  457 kB/s 13s
-87% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 68.5 MB/74.2 MB 92%]  457 kB/s 12s
-87% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 68.7 MB/74.2 MB 93%]  457 kB/s 12s
-88% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 68.9 MB/74.2 MB 93%]  457 kB/s 11s
-88% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 69.2 MB/74.2 MB 93%]  457 kB/s 11s
-88% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 69.4 MB/74.2 MB 93%]  457 kB/s 10s
-88% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 69.6 MB/74.2 MB 94%]  457 kB/s 10s
-89% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 69.9 MB/74.2 MB 94%]   457 kB/s 9s
-89% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 70.1 MB/74.2 MB 94%]   457 kB/s 9s
-89% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 70.3 MB/74.2 MB 95%]   457 kB/s 8s
-89% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 70.5 MB/74.2 MB 95%]   457 kB/s 8s
-90% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 70.7 MB/74.2 MB 95%]   457 kB/s 7s
-90% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 71.0 MB/74.2 MB 96%]   457 kB/s 7s
-90% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 71.2 MB/74.2 MB 96%]   457 kB/s 6s
-90% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 71.4 MB/74.2 MB 96%]   457 kB/s 6s
-91% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 71.6 MB/74.2 MB 97%]   457 kB/s 5s
-91% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 71.9 MB/74.2 MB 97%]   457 kB/s 5s
-91% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 72.1 MB/74.2 MB 97%]   457 kB/s 4s
-91% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 72.3 MB/74.2 MB 97%]   457 kB/s 4s
-91% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 72.4 MB/74.2 MB 98%]   457 kB/s 4s
-92% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 72.7 MB/74.2 MB 98%]   457 kB/s 3s
-92% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 72.9 MB/74.2 MB 98%]   457 kB/s 3s
-92% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 73.2 MB/74.2 MB 99%]   440 kB/s 2s
-92% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 73.4 MB/74.2 MB 99%]   440 kB/s 2s
-93% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 73.6 MB/74.2 MB 99%]   440 kB/s 1s
-93% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 73.8 MB/74.2 MB 99%]   440 kB/s 1s
-93% [9 linux-image-6.1.0-0.deb11.31-rt-amd64 74.0 MB/74.2 MB 100%]  440 kB/s 0s
+
 Get:10 http://deb.debian.org/debian-security bullseye-security/main amd64 linux-image-6.1-rt-amd64 amd64 6.1.128-1~deb11u1 [1500 B]
 Get:11 http://deb.debian.org/debian bullseye/main amd64 wireguard-tools amd64 1.0.20210223-1 [86.2 kB]
 97% [11 wireguard-tools 4096 B/86.2 kB 5%]                          440 kB/s 0s
@@ -2199,11 +1825,6 @@ Fetched 76.5 MB in 2min 51s (446 kB/s)
 
 [2025-03-29T22:49:58.953Z] #20 367.7 rm -r /var/lib/apt/lists && mv /tmp/tmpec8w0ccx/lists /var/lib/apt/lists
 
-[2025-03-29T22:49:58.954Z] #20 367.9 Done!
-
-[2025-03-29T22:49:59.152Z] #20 DONE 367.9s
-
-
 [2025-03-29T22:49:59.152Z] #21 [dev_containers_target_stage  7/10] RUN --mount=type=bind,from=dev_containers_feature_content_source,source=common-utils_3,target=/tmp/build-features-src/common-utils_3     cp -ar /tmp/build-features-src/common-utils_3 /tmp/dev-container-features  && chmod -R 0755 /tmp/dev-container-features/common-utils_3  && cd /tmp/dev-container-features/common-utils_3  && chmod +x ./devcontainer-features-install.sh  && ./devcontainer-features-install.sh  && rm -rf /tmp/dev-container-features/common-utils_3
 
 [2025-03-29T22:49:59.173Z] #21 0.174 ===========================================================================
@@ -2244,14 +1865,6 @@ Fetched 76.5 MB in 2min 51s (446 kB/s)
 [2025-03-29T22:50:17.970Z] #21 18.97 Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [353 kB]
 
 [2025-03-29T22:50:18.694Z] #21 19.69 Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [18.8 kB]
-
-[2025-03-29T22:50:18.905Z] #21 19.75 Fetched 8625 kB in 19s (446 kB/s)
-
-[2025-03-29T22:50:18.905Z] #21 19.75 Reading package lists...
-[2025-03-29T22:50:19.072Z]
-
-[2025-03-29T22:50:19.315Z] #21 20.16 Reading package lists...
-[2025-03-29T22:50:19.472Z]
 
 [2025-03-29T22:50:19.574Z] #21 20.49 Building dependency tree...
 #21 20.57 Reading state information...
@@ -2382,10 +1995,6 @@ Fetched 76.5 MB in 2min 51s (446 kB/s)
 [2025-03-29T22:50:52.647Z]
 #21 53.50 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 
-[2025-03-29T22:50:54.339Z] #21 55.34 Done!
-
-[2025-03-29T22:50:54.565Z] #21 DONE 55.4s
-
 #22 [dev_containers_target_stage  8/10] RUN --mount=type=bind,from=dev_containers_feature_content_source,source=desktop-lite_4,target=/tmp/build-features-src/desktop-lite_4     cp -ar /tmp/build-features-src/desktop-lite_4 /tmp/dev-container-features  && chmod -R 0755 /tmp/dev-container-features/desktop-lite_4  && cd /tmp/dev-container-features/desktop-lite_4  && chmod +x ./devcontainer-features-install.sh  && ./devcontainer-features-install.sh  && rm -rf /tmp/dev-container-features/desktop-lite_4
 #22 0.136 ===========================================================================
 #22 0.136 Feature       : Light-weight Desktop
@@ -2417,16 +2026,6 @@ Fetched 76.5 MB in 2min 51s (446 kB/s)
 
 [2025-03-29T22:51:14.838Z] #22 20.41 Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [18.8 kB]
 
-[2025-03-29T22:51:15.060Z] #22 20.48 Fetched 8625 kB in 20s (428 kB/s)
-#22 20.48 Reading package lists...
-[2025-03-29T22:51:15.221Z]
-
-[2025-03-29T22:51:15.836Z] #22 21.41 Reading package lists...
-[2025-03-29T22:51:16.146Z]
-
-[2025-03-29T22:51:16.251Z] #22 21.74 Building dependency tree...
-#22 21.82 Reading state information...
-[2025-03-29T22:51:16.482Z]
 #22 21.90 at-spi2-core is already the newest version (2.38.0-4+deb11u1).
 #22 21.90 at-spi2-core set to manually installed.
 #22 21.90 ca-certificates is already the newest version (20210119).
@@ -4090,13 +3689,8 @@ Fetched 76.5 MB in 2min 51s (446 kB/s)
 #22 341.7 finishing deferred symbolic links:
 #22 341.7   /usr/local/novnc/websockify-0.10.0/tests/latency.py -> echo.py
 #22 341.7   /usr/local/novnc/websockify-0.10.0/websockify.py -> run
-#22 341.8 Reading package lists...
-[2025-03-29T22:56:36.544Z]
 
-[2025-03-29T22:56:36.705Z] #22 342.1 Building dependency tree...
-#22 342.2 Reading state information...
 #22 342.3 python3-minimal is already the newest version (3.9.2-3).
-#22 342.3 The following additional packages will be installed:
 
 [2025-03-29T22:56:36.862Z] #22 342.3   libblas3 libgfortran5 liblapack3
 #22 342.3 Suggested packages:
@@ -4114,8 +3708,6 @@ Fetched 76.5 MB in 2min 51s (446 kB/s)
 [2025-03-29T22:56:38.899Z] #22 344.5 Get:3 http://deb.debian.org/debian bullseye/main amd64 liblapack3 amd64 3.9.0-3+deb11u1 [2166 kB]
 
 [2025-03-29T22:56:46.026Z] #22 351.6 Get:4 http://deb.debian.org/debian bullseye/main amd64 python3-numpy amd64 1:1.19.5-1 [2693 kB]
-
-[2025-03-29T22:56:52.900Z] #22 358.5 Fetched 5740 kB in 16s (370 kB/s)
 
 [2025-03-29T22:56:53.071Z] #22 358.5 Selecting previously unselected package libblas3:amd64.
 (Reading database ... 60709 files and directories currently installed.)
@@ -4155,11 +3747,6 @@ Fetched 76.5 MB in 2min 51s (446 kB/s)
 #22 360.3
 #22 360.3 In both cases, use the password "test" when connecting
 
-[2025-03-29T22:56:54.770Z] #22 360.3
-#22 360.3 (*) Done!
-#22 360.3
-
-[2025-03-29T22:56:54.880Z] #22 DONE 360.5s
 
 [2025-03-29T22:56:55.032Z]
 #23 [dev_containers_target_stage  9/10] RUN --mount=type=bind,from=dev_containers_feature_content_source,source=rust_5,target=/tmp/build-features-src/rust_5     cp -ar /tmp/build-features-src/rust_5 /tmp/dev-container-features  && chmod -R 0755 /tmp/dev-container-features/rust_5  && cd /tmp/dev-container-features/rust_5  && chmod +x ./devcontainer-features-install.sh  && ./devcontainer-features-install.sh  && rm -rf /tmp/dev-container-features/rust_5
@@ -4198,11 +3785,6 @@ Fetched 76.5 MB in 2min 51s (446 kB/s)
 
 [2025-03-29T22:57:42.588Z] #23 47.71 Updating /etc/bash.bashrc and /etc/zsh/zshrc...
 
-[2025-03-29T22:57:45.580Z] #23 50.70 Done!
-
-[2025-03-29T22:57:45.714Z] #23 DONE 50.8s
-
-[2025-03-29T22:57:45.865Z]
 #24 [dev_containers_target_stage 10/10] RUN --mount=type=bind,from=dev_containers_feature_content_source,source=sshd_6,target=/tmp/build-features-src/sshd_6     cp -ar /tmp/build-features-src/sshd_6 /tmp/dev-container-features  && chmod -R 0755 /tmp/dev-container-features/sshd_6  && cd /tmp/dev-container-features/sshd_6  && chmod +x ./devcontainer-features-install.sh  && ./devcontainer-features-install.sh  && rm -rf /tmp/dev-container-features/sshd_6
 
 [2025-03-29T22:57:45.891Z] #24 0.176 ===========================================================================
@@ -4231,12 +3813,8 @@ Fetched 76.5 MB in 2min 51s (446 kB/s)
 
 [2025-03-29T22:58:07.557Z] #24 21.84 Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [18.8 kB]
 
-[2025-03-29T22:58:07.750Z] #24 21.89 Fetched 8625 kB in 21s (401 kB/s)
-#24 21.89 Reading package lists...
-[2025-03-29T22:58:07.898Z]
 
 [2025-03-29T22:58:08.116Z] #24 22.25 Reading package lists...
-[2025-03-29T22:58:08.247Z]
 
 [2025-03-29T22:58:08.408Z] #24 22.55 Building dependency tree...
 #24 22.63 Reading state information...
@@ -4292,7 +3870,6 @@ Fetched 76.5 MB in 2min 51s (446 kB/s)
 #24 26.26 Creating config file /etc/ssh/sshd_config with new version
 
 [2025-03-29T22:58:12.320Z] #24 26.61 Creating SSH2 RSA key; this may take some time ...
-[2025-03-29T22:58:12.487Z]
 
 [2025-03-29T22:58:12.602Z] #24 26.80 3072 SHA256:ObVDVYiJ+TWcaxwsGCbbUCfiYQonUACGAzPv3RXoTQ0 root@buildkitsandbox (RSA)
 #24 26.83 Creating SSH2 ECDSA key; this may take some time ...
@@ -4325,14 +3902,6 @@ Fetched 76.5 MB in 2min 51s (446 kB/s)
 #24 28.53
 #24 DONE 28.6s
 
-#25 exporting to image
-#25 exporting layers
-
-[2025-03-29T22:58:32.204Z] #25 exporting layers 17.9s done
-#25 preparing layers for inline cache
-
-[2025-03-29T22:58:32.543Z] #25 preparing layers for inline cache 0.3s done
-
 [2025-03-29T22:58:32.639Z] #25 exporting manifest sha256:7d908ba8f380c4da2bc785f6f152446f09a2eb41577467904bb04d3fc763e863 done
 #25 exporting config sha256:f08a0faaa83be6c78bb76eb8ef0e6154268a855c8c1d16b340c27a83636d27dd done
 #25 exporting attestation manifest sha256:14b9388838763f2932ab5042a27cd9f6934c5cf64b5fca3726b601bd022fd9f4 done
@@ -4347,43 +3916,4 @@ View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux
  ✅ Devcontainer built successfully
 🔹 Image name: vsc-soroban-quest-b12b92e7a3b8a364f92f6a2c005830943284b8d291c58ca2737d032cd38007b7
 The push refers to repository [docker.io/chrisstellar/vsc-soroban-quest-b12b9-prebuild]
-e69fbde14099: Waiting
-5515477de60b: Waiting
-f9f846193b5c: Waiting
-61faf2376752: Waiting
-8d6bcbc2151c: Waiting
-943167415700: Waiting
-44eb396ce522: Waiting
-c16c06f54495: Waiting
-0289a1845faf: Waiting
-20a334500f4c: Pushed
-de21d3ad3920: Pushed
-1b42bcf4ae54: Layer already exists
-30db83c7ba7e: Pushed
-b9775286dc83: Layer already exists
-e451f55144f6: Layer already exists
-25779bf31f6b: Pushed
-e9ae864e297f: Layer already exists
-ee17d31fb8a7: Pushed
-32ed0cf871f8: Layer already exists
-dda2c40a9885: Pushed
-01ede55d6726: Pushed
-4ff5a3a54264: Layer already exists
-4f4fb700ef54: Layer already exists
-4e7e996f031d: Layer already exists
-cb0cb5e21cc4: Pushed
-9a00e32d4533: Layer already exists
-1e36295709cc: Layer already exists
-latest: digest: sha256:4b3d34f660c9159aec8aa4d07f651f3f2a86d2846d10fb2fd3537e3e33fc929d size: 856
- 🛠️ New prebuild pushed
-WARNING! This will remove all dangling images.
-Are you sure you want to continue? [y/N] Deleted Images:
-untagged: sha256:da2b5a301e534a532d3102ada434440ceb65ea1bfc1c3556cb68fbc5d877048a
-deleted: sha256:da2b5a301e534a532d3102ada434440ceb65ea1bfc1c3556cb68fbc5d877048a
-deleted: sha256:a5eeb39f663ba333da6011c4cf7c1b41a61a8e5904f80a65f067f741072c4891
-deleted: sha256:c0d0dff04c829c9baaad739a4d98f5c000b3f8a3310012459162d59bf381f108
-deleted: sha256:75af7a0a6ba8cf258b51b3b69108e1d93ebd90d82e903803b74cdb4f63ac9071
-deleted: sha256:2c481849e69bf0e042ba8041b8e0b157ed641f5a31130618b50449faf097f5ac
-deleted: sha256:b725237d20986c1c773776d2af86e55190e155041cff73176609f3d3952d7c62
 
-Total reclaimed space: 43.88kB
