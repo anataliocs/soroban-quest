@@ -30,11 +30,17 @@
 
 ## 🌟 Introduction 🌟
 
-Welcome to the **Stellar Quest 3** preview! We are building a immersive approach to learning and practicing
+Welcome to the **Stellar Quest 3** preview! We are building an immersive approach to learning and practicing
 Stellar Smart Contract development. While isolated web tutorials are great we are trying to do something a bit more.
 Stellar Quest 3 brings **real-world developer environments** directly to
 your laptop on-demand, streamling onboarding and making your developer experience a bit more **gamified, engaging,
 and fun** 🔥.
+
+#### 🏆**Preview of Proof of Completion Cert:**<br/>
+
+<a href="https://anataliocs.github.io/soroban-quest/">
+  <img alt="Github Pages" src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&amp;logo=github&amp;logoColor=white"/>
+</a>
 
 ## ✨ Why be Excited for Stellar Quest 3? ✨
 
@@ -48,8 +54,7 @@ and fun** 🔥.
   which facilitates workflows and web integrations directly from your devcontainer
 - 🧩 **Passkeys:** Seamlessly leverage stellar wallet browser plugins like such as xBull, or create Passkey
   wallets using the open-source Bitwarden password manager
-- 🔑 **Secure:** Secure OAuth integrations with popular platforms like Github and Discord and VPN and SSH for privacy
-  and security
+- 🔑 **Secure:** Secure OAuth2 integrations with Github and Discord and VPN and SSH for privacy and security
 
 ## 🚦 What's Coming with Stellar Quest 3? 🚦
 
