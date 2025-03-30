@@ -53,6 +53,7 @@
       "targets": "wasm32-unknown-unknown",
       "profile": "default",
     },
+    "ghcr.io/lee-orr/rusty-dev-containers/sccache:0": {},
     "ghcr.io/devcontainers-extra/features/dnote:1": {},
     "ghcr.io/devcontainers-extra/features/act:1": {},
     "ghcr.io/devcontainers-extra/features/wireguard-apt-get:1": {},

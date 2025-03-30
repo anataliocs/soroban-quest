@@ -27,26 +27,26 @@
   ],
   "tasks": [
     {
-      "label": "Question 1:  What is the purpose of the no_std tag?",
+      "label": "Question 1:  What is the purpose of the [no_std] tag?",
       "presentation": {
         "clear": true,
         "focus": true,
         "showReuseMessage": false
       },
-      "command": "cd scripts | ./question1.sh",
+      "command": "./quiz/question/question1.sh",
       "type": "shell",
       "args": [
         "${input:question-one-answers}"
       ]
     },
     {
-      "label": "Question 2:  What is a contract macro?",
+      "label": "Question 2:  What does the [contract] attribute macro do?",
       "presentation": {
         "clear": true,
         "focus": true,
         "showReuseMessage": true
       },
-      "command": "cd scripts | ./question1.sh",
+      "command": "./quiz/question/question2.sh",
       "type": "shell",
       "args": [
         "${input:question-two-answers}"

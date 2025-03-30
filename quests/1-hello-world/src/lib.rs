@@ -11,9 +11,10 @@ use soroban_sdk::{contract, contractimpl, symbol_short, vec, Env, Symbol, Vec};
 // on the standard library, resulting in a smaller binary size.
 
 //<>TASK
-// //* Learn about the contract macro
+// //* Learn about contract macros
 
-/// The `//[contract]` attribute in Rust is used to mark a struct as a smart contract. When applied to a
+/// The `//[contract]` attribute macro in Rust is used to mark a struct as a smart contract. When
+/// applied to a
 /// struct, it indicates that the struct represents a smart contract and allows the Soroban SDK to
 /// recognize and interact with it as a contract. This attribute is used to define the contract type and
 /// provide necessary metadata for the contract implementation.
