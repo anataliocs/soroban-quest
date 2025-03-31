@@ -119,7 +119,7 @@
   "onCreateCommand": ".devcontainer/onCreate.sh",
   "updateContentCommand": {
     "dotfiles": ".devcontainer/updateContentDotfile.sh",
-    "brew": ".devcontainers/updateContentCargo.sh",
+    "cargo": ".devcontainers/updateContentCargo.sh",
   },
   "postCreateCommand": ".devcontainer/postCreate.sh",
   "postStartCommand": ".devcontainer/postStart.sh",
