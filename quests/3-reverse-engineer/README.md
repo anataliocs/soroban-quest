@@ -15,14 +15,14 @@ correct function in that contract, while providing the correct argument.**
 - [TL;DR](#tldr)
 - [How to Play](#how-to-play)
 - [The Task at Hand](#the-task-at-hand)
-  - [Explore the Contract Code](#explore-the-contract-code)
-  - [Using `stellar` CLI to Decode XDR](#using-stellar-cli-to-decode-xdr)
-  - [How do I find a `contract_address`?](#how-do-i-find-a-contract_address)
-    - [1. Find an Operation](#1-find-an-operation)
-    - [2. View the Transaction Envelope](#2-view-the-transaction-envelope)
-    - [3. Decode the Contract Address](#3-decode-the-contract-address)
-    - [4. Other Methods](#4-other-methods)
-    - [Sidenote About Reading Deployed WASM Binaries](#sidenote-about-reading-deployed-wasm-binaries)
+    - [Explore the Contract Code](#explore-the-contract-code)
+    - [Using `stellar` CLI to Decode XDR](#using-stellar-cli-to-decode-xdr)
+    - [How do I find a `contract_address`?](#how-do-i-find-a-contract_address)
+        - [1. Find an Operation](#1-find-an-operation)
+        - [2. View the Transaction Envelope](#2-view-the-transaction-envelope)
+        - [3. Decode the Contract Address](#3-decode-the-contract-address)
+        - [4. Other Methods](#4-other-methods)
+        - [Sidenote About Reading Deployed WASM Binaries](#sidenote-about-reading-deployed-wasm-binaries)
 - [Further Reading](#further-reading)
 - [Still Stuck?](#still-stuck)
 
@@ -284,17 +284,30 @@ If you're hitting a brick wall, and you're not sure what your next move is,
 check out [this section](../../README.md#feeling-lost) in our main README. It's
 got a couple of suggestions for where you might go from here.
 
-[how-to-play]: ../1-hello-world/CHALLENGE1.md#how-to-play
+[how-to-play]: ../1-hello-world/bossfight-1.md#how-to-play
+
 [xdr]: https://developers.stellar.org/docs/encyclopedia/xdr
+
 [stellar-cli]: https://developers.stellar.org/docs/tools/developer-tools/cli/stellar-cli
+
 [lab]: https://lab.stellar.org/?$=network$id=testnet&label=Testnet&horizonUrl=https:////horizon-testnet.stellar.org&rpcUrl=https:////soroban-testnet.stellar.org&passphrase=Test%20SDF%20Network%20/;%20September%202015;;
+
 [ops]: https://horizon-testnet.stellar.org/operations/GDUISJBZAXYOLE7GEFPJPQFFJOAOW4K6LJFC5MN7TOB5QH5EHLDJ2SGP
+
 [tx]: https://horizon-testnet.stellar.org/transactions/21f329e415594da21dbe4c12e446411aa435603801bd5bf67dd1b376f5f37fab
+
 [twitch]: https://www.twitch.tv/videos/1642865389?t=00h23m14s
+
 [twitch-clip]: https://clips.twitch.tv/FragileSneakyOstrichGivePLZ-DK9h3VVmUjqVDDZG
+
 [twitch-full]: https://www.twitch.tv/videos/1642865389
+
 [stellar-rpc]: https://developers.stellar.org/docs/data/rpc
+
 [install-stellar]: https://developers.stellar.org/docs/build/smart-contracts/getting-started/setup#install-the-stellar-cli
+
 [gle]: https://developers.stellar.org/docs/data/hubble/analyst-guide/queries-for-horizon-like-data#getledgerentries
+
 [get-wasm-code]: https://developers.stellar.org/docs/build/guides/dapps/state-archival#step-4-handling-contract-instance-restoration
+
 [sdk-encode-contract]: https://stellar.github.io/js-stellar-sdk/StrKey.html#.encodeContract

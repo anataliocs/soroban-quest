@@ -16,15 +16,15 @@ same data.**
 - [TL;DR](#tldr)
 - [How to Play](#how-to-play)
 - [The Task at Hand](#the-task-at-hand)
-  - [Explore the Contract Code](#explore-the-contract-code)
-  - [State Archival and Storage Types](#state-archival-and-storage-types)
-    - [Temporary Storage](#temporary-storage)
-    - [Persistent Storage](#persistent-storage)
-    - [Instance Storage](#instance-storage)
-  - [Storing Data](#storing-data)
-  - [Retrieving Data](#retrieving-data)
-  - [Extending TTLs](#extending-ttls)
-  - [Simple Authentication](#simple-authentication)
+    - [Explore the Contract Code](#explore-the-contract-code)
+    - [State Archival and Storage Types](#state-archival-and-storage-types)
+        - [Temporary Storage](#temporary-storage)
+        - [Persistent Storage](#persistent-storage)
+        - [Instance Storage](#instance-storage)
+    - [Storing Data](#storing-data)
+    - [Retrieving Data](#retrieving-data)
+    - [Extending TTLs](#extending-ttls)
+    - [Simple Authentication](#simple-authentication)
 - [Further Reading](#further-reading)
 - [Still Stuck?](#still-stuck)
 
@@ -191,11 +191,11 @@ current set of values for these lifetime settings are listed in the following
 table. The values are listed in "number of ledgers" and a typical ledger will
 settle in an estimated 5 seconds.
 
-| Storage Type | Minimum Lifetime   | Maximum Lifetime       | Default Lifetime   |
-| ------------ | ------------------ | ---------------------- | ------------------ |
-| Temporary    | 16 (~80 seconds)   | 3,110,400 (~6 months)  | 16 (~80 seconds)   |
-| Persistent   | 120,960 (~14 days) | 3,110,400 (~6 months)  | 120,960 (~14 days) |
-| Instance     | 120,960 (~14 days) | 3,110,400 (~6 months)  | 120,960 (~14 days) |
+| Storage Type | Minimum Lifetime   | Maximum Lifetime      | Default Lifetime   |
+|--------------|--------------------|-----------------------|--------------------|
+| Temporary    | 16 (~80 seconds)   | 3,110,400 (~6 months) | 16 (~80 seconds)   |
+| Persistent   | 120,960 (~14 days) | 3,110,400 (~6 months) | 120,960 (~14 days) |
+| Instance     | 120,960 (~14 days) | 3,110,400 (~6 months) | 120,960 (~14 days) |
 
 Because the `temporary` storage type has such a short default lifetime, our
 contract code immediately extends the TTL of the entry to the maximum lifetime
@@ -247,9 +247,14 @@ If you're hitting a brick wall, and you're not sure what your next move is,
 check out [this section](../../README.md#feeling-lost) in our main README. It's
 got a couple of suggestions for where you might go from here.
 
-[how-to-play]: ../1-hello-world/CHALLENGE1.md#how-to-play
+[how-to-play]: ../1-hello-world/bossfight-1.md#how-to-play
+
 [data-example]: https://developers.stellar.org/docs/build/smart-contracts/getting-started/storing-data
+
 [auth-example]: https://developers.stellar.org/docs/build/smart-contracts/example-contracts/auth
+
 [persist-data]: https://developers.stellar.org/docs/learn/encyclopedia/storage/persisting-data
+
 [state-archival]: https://developers.stellar.org/docs/learn/encyclopedia/storage/state-archival
+
 [extend-ttl]: https://developers.stellar.org/docs/build/guides/cli/extend-contract-storage

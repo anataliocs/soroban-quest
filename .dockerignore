@@ -36,7 +36,7 @@ dist
 *.old
 
 # Editor directories and files
-.vscode/
+.devcontainer/dotfiles/.vscode/
 *.code-workspace
 
 # OS-specific files

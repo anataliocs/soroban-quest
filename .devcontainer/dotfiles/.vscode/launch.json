@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch client.sh in Terminal",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "/bin/bash",
+      "args": [
+        "${workspaceFolder}/client.sh"
+      ],
+      "cwd": "${workspaceFolder}",
+      "externalConsole": true,
+    },
+    {
+      "name": "Open Image in PNG Editor",
+      "type": "process",
+      "request": "launch",
+      "program": "open",
+      "args": [
+        "Stellar-Quest-3.png"
+      ],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

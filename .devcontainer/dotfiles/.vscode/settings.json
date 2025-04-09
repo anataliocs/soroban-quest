@@ -1,0 +1,41 @@
+{
+  "workbench.settings.editor": "json",
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "window.newWindowProfile": "Default",
+  "makefile.configureOnOpen": true,
+  "explorer.confirmDragAndDrop": false,
+  "github.codespaces.devcontainerChangedNotificationStyle": "modal",
+  "workbench.startupEditor": "readme",
+  "extensions.experimental.deferredStartupFinishedActivation": true,
+  "problems.showCurrentInStatus": true,
+  "github.codespaces.showPerformanceExplorer": true,
+  "workbench.editor.alwaysShowEditorActions": true,
+  "vscode.commands.executeCommand": true,
+  "terminal.explorerKind": "external",
+  "dev.containers.defaultFeatures": {},
+  "workbench.editorAssociations": {
+    "*.png": "imagePreview.previewEditor"
+  },
+  "todo-tree.general.statusBar": "total",
+  "todo-tree.general.showActivityBarBadge": true,
+  "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
+  "todo-tree.general.tags": [
+    "<>QUEST",
+    "<>TASK",
+    "<>CODE"
+  ],
+  "todo-tree.tree.expanded": true,
+  "better-comments.highlightPlainText": true,
+  "better-comments.tags": [
+    {
+      "tag": "//*",
+      "color": "#FF2D00",
+      "bold": true
+    },
+    {
+      "tag": "//?",
+      "color": "purple",
+      "bold": true
+    }
+  ]
+}
