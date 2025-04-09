@@ -1,0 +1,57 @@
+{
+  "inputs": [
+	{
+	  "type": "pickString",
+	  "id": "question-one-answers",
+	  "description": "What is the purpose of a `no_std` tag in a Stellar Smart Contract?",
+	  "options": [
+		"It enables the use of standard library functions within the smart contract, enhancing its functionality",
+		"It allows the smart contract to directly interact with the operating system's file system",
+		"It indicates a smart contract will not use the Rust standard library, achieving a smaller memory footprint with a minimal library",
+		"It optimizes the smart contract for execution on high-performance clusters, improving performance"
+	  ],
+	  "default": "component"
+	},
+	{
+	  "type": "pickString",
+	  "id": "question-two-answers",
+	  "description": "What is a contract macro?",
+	  "options": [
+		"Makes a struct mutable",
+		"Adds a contract label",
+		"Marks a struct for contract functions attachment",
+		"Creates a JSON RPC Service"
+	  ],
+	  "default": "component"
+	}
+  ],
+  "tasks": [
+	{
+	  "label": "Question 1:  What is the purpose of the [no_std] tag?",
+	  "presentation": {
+		"clear": true,
+		"focus": true,
+		"showReuseMessage": false
+	  },
+	  "command": "./quiz/question/question1.sh",
+	  "type": "shell",
+	  "args": [
+		"${input:question-one-answers}"
+	  ]
+	},
+	{
+	  "label": "Question 2:  What does the [contract] attribute macro do?",
+	  "presentation": {
+		"clear": true,
+		"focus": true,
+		"showReuseMessage": true
+	  },
+	  "command": "./quiz/question/question2.sh",
+	  "type": "shell",
+	  "args": [
+		"${input:question-two-answers}"
+	  ]
+	}
+  ],
+  "version": "2.0.0"
+}

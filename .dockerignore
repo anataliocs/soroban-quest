@@ -47,5 +47,5 @@ Thumbs.db
 
 .devpod-internal
 z-dc-build-info/*
-build-local.sh
+build_local.sh
 facilitators.md

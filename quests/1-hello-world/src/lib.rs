@@ -5,7 +5,7 @@ use soroban_sdk::{contract, contractimpl, symbol_short, vec, Env, Symbol, Vec};
 // //? Learn about your first Stellar smart contract!
 
 //<>TASK
-// //* Learn the function of the no_std tag
+// //* 1.  Learn the function of the no_std tag
 
 // The `//![no_std]` attribute in Rust is used to indicate that the crate does not depend
 // on the standard library, resulting in a smaller binary size.
