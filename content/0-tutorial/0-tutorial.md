@@ -185,14 +185,14 @@ echo "source <(stellar completion --shell zsh)" >> ~/.zshrc
   filter: invert(5%) sepia(5%) saturate(100%) hue-rotate(180deg) brightness(100%) contrast(100%);
   cursor: pointer;
 }
-a:hover {
-  cursor: pointer;
-}
 </style>
 
-<a href="https://anataliocs.github.io/Stellar-Quest-3-Jekyll/about/" >
+<a class="svg" href="https://anataliocs.github.io/Stellar-Quest-3-Jekyll/about/" >
 <img class="svg" src="../../assets/stellarbox.svg" alt="New Stellar Unlock!">
-</a>
+</a><br/>
+
+Github actions can drop off treasures in your Github Pages deployment. Click this link to check out the Treasure
+Chest.
 
 ----
 
@@ -201,6 +201,8 @@ a:hover {
 ```
 <> Quality-Gate-3:  Contract Operations
 ```
+
+Now let's build,test deploy and invoke a smart contract.
 
 ----
 
@@ -226,5 +228,12 @@ a:hover {
 > ![nigel-1-sticker-sm.png](nigel-1-sticker-sm.png)
 
 ### 📋 QC Check 4:  Knowledge
+
+```
+<> Quality-Gate-4:  Contract Operations
+```
+
+Now let's
+
 
 ----
