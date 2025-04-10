@@ -16,7 +16,7 @@ jobs:
         with:
           script: | 
 
-              const discussionNumber = await getDiscussionNumber(owner, repo, "Welcome to Stellar Quest 3!");
+              const discussionNumber = 3;
               console.log("Discussion Number:", discussionNumber);
             
               const body = `Welcome ${{github.actor}} to the Stellar Quest 3 !!!! 🎉 `;
