@@ -39,7 +39,7 @@
 		"focus": true,
 		"showReuseMessage": false
 	  },
-	  "command": "echo qc1",
+	  "command": "./quiz/qc/qc1.sh",
 	  "type": "shell",
 	  "args": [
 		"${input:qc-one-startup}"

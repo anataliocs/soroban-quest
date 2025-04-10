@@ -237,3 +237,10 @@ Now let's
 
 
 ----
+
+
+----
+
+**Congrats on completing the tutorial!!! 👏 🎉**
+
+![footer-img.png](../../assets/footer-img.png)
