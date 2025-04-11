@@ -17,25 +17,14 @@ if [ -e .devcontainer/dotfiles/launch.json ]; then
 fi
 
 if [ -e .devcontainer/dotfiles/.bashrc ]; then
-  mv -n .devcontainer/dotfiles/.bashrc "${remoteEnv:HOME}"/
+  cat .devcontainer/dotfiles/.bashrc | echo > "${remoteEnv:HOME}"/.bashrc
 fi
 
 if [ -e .devcontainer/dotfiles/.zshrc ]; then
-  mv -n .devcontainer/dotfiles/.zshrc "${remoteEnv:HOME}"/.zshrc
-fi
-
-if [ -e .devcontainer/dotfiles/dnote.db ]; then
-  mv -n .devcontainer/dotfiles/dnote.db "${remoteEnv:HOME}"/.dnote
+  cat .devcontainer/dotfiles/.zshrc | echo > "${remoteEnv:HOME}"/.zshrc
 fi
 
 if [ -e .devcontainer/dotfiles/.fluxbox/menu ]; then
   mv -n .devcontainer/dotfiles/.fluxbox/menu "${remoteEnv:HOME}"/.fluxbox
 fi
 
-# Check the exit status and provide informative output
-if [ $? -eq 0 ] && [ -f "${remoteEnv:BUILD_LOG_FILE}" ]; then
-  echo "✅ onCreate() executed successfully" >>"${remoteEnv:BUILD_LOG_FILE}"
-else
-  echo "❌ Error executing onCreate() "
-  echo "${remoteEnv:BUILD_LOG_FILE}"
-fi
