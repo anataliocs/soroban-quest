@@ -1,18 +1,5 @@
  <!-- omit in toc -->
 
-<style>
-.svg:hover {
-  filter: invert(5%) sepia(5%) saturate(100%) hue-rotate(180deg) brightness(100%) contrast(100%);
-  cursor: pointer;
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-</style>
-
 <div style="text-align: center;" align="center">
 <h1>🚀 Stellar Quest 3 🚀</h1>
 </div>
