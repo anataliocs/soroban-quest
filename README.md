@@ -4,9 +4,17 @@
 <h1>🚀 Stellar Quest 3 🚀</h1>
 </div>
 
-<div style="text-align: center;" align="center">
-<img src="assets/Stellar-Quest-3.png" alt="stellar quest 3" height="auto" width="50%"/>
-</div><br/><hr/>
+----
+
+<div align="center">
+  <img src="assets/title-screen.gif" alt="Open in Codespaces">
+</div>
+
+----
+![stellar-start.svg](assets/stellar-start.svg)
+----
+
+
 
 <div style="text-align: center;" align="center">
 <strong>💻 Devcontainers on Demand  💻</strong>

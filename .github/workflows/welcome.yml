@@ -3,8 +3,8 @@ name: Welcome new Quester
 on:
   workflow_dispatch:
   fork:
-    types: [created]
-  
+    types: [ created ]
+
 
 jobs:
   build:
@@ -14,15 +14,14 @@ jobs:
       - name: View context attributes
         uses: actions/github-script@v7
         with:
-          script: | 
-
-              const discussionNumber = 3;
-              console.log("Discussion Number:", discussionNumber);
+          script: |
             
-              const body = `Welcome ${{github.actor}} to the Stellar Quest 3 !!!! 🎉 `;
-                await github.rest.discussions.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                discussion_number: discussionNumber,
-                body: body
-              });
+            const discussionNumber = 3;
+            console.log("Discussion Number:", discussionNumber);
+            
+              await github.rest.discussions.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              discussion_number: discussionNumber,
+              body: "Welcome ${{github.actor}} to the Stellar Quest 3 !!!!"
+            });
