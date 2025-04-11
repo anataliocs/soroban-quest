@@ -4,127 +4,127 @@
   "context": "..",
   "remoteUser": "vscode",
   "build": {
-    "cacheFrom": [
-      "chrisstellar/vsc-soroban-quest-b12b9-prebuild:latest"
-    ],
-    "options": [
-      "--platform=linux/amd64"
-    ],
-    "args": {
-      "DEBIAN_VERSION": "bullseye"
-    }
+	"cacheFrom": [
+	  "chrisstellar/vsc-soroban-quest-b12b9-prebuild:latest"
+	],
+	"options": [
+	  "--platform=linux/amd64"
+	],
+	"args": {
+	  "DEBIAN_VERSION": "bullseye"
+	}
   },
   "hostRequirements": {
-    "cpus": 4,
-    "memory": "16",
-    "storage": "32"
+	"cpus": 4,
+	"memory": "16",
+	"storage": "32"
   },
   "mounts": [
-    "type=bind,source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/${remoteEnv:HOME}/.ssh,readonly"
+	"type=bind,source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/${remoteEnv:HOME}/.ssh,readonly"
   ],
   "forwardPorts": [
-    6080,
-    2222
+	6080,
+	2222
   ],
   "portsAttributes": {
-    "6080": {
-      "onAutoForward": "openPreview",
-      "label": "Desktop",
-      "requireLocalPort": true
-    },
-    "2222": {
-      "onAutoForward": "notify",
-      "label": "ssh",
-      "requireLocalPort": true
-    }
+	"6080": {
+	  "onAutoForward": "openPreview",
+	  "label": "Desktop",
+	  "requireLocalPort": true
+	},
+	"2222": {
+	  "onAutoForward": "notify",
+	  "label": "ssh",
+	  "requireLocalPort": true
+	}
   },
   "remoteEnv": {
-    "SOROBAN_RPC_URL": "https://soroban-testnet.stellar.org",
-    "SOROBAN_NETWORK_PASSPHRASE": "Test SDF Network ; September 2015",
-    "DISCORD_SERVER_ID": "897514728459468821",
-    "DISCORD_CHANNEL_ID": "897514728459468821",
-    "BUILD_LOG_FILE": "${containerWorkspaceFolder}/log/devcontainer/devcontainer_build.log",
-    "DEP_LOG_FILE": "${containerWorkspaceFolder}/log/devcontainer/dependencies.log"
+	"SOROBAN_RPC_URL": "https://soroban-testnet.stellar.org",
+	"SOROBAN_NETWORK_PASSPHRASE": "Test SDF Network ; September 2015",
+	"DISCORD_SERVER_ID": "897514728459468821",
+	"DISCORD_CHANNEL_ID": "897514728459468821",
+	"BUILD_LOG_FILE": "${containerWorkspaceFolder}/log/devcontainer/devcontainer_build.log",
+	"DEP_LOG_FILE": "${containerWorkspaceFolder}/log/devcontainer/dependencies.log"
   },
   "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {},
-    "ghcr.io/devcontainers/features/sshd:1": {},
-    "ghcr.io/devcontainers/features/rust:1": {
-      "targets": "wasm32-unknown-unknown",
-      "profile": "default",
-    },
-    "ghcr.io/lee-orr/rusty-dev-containers/sccache:0": {},
-    "ghcr.io/devcontainers-extra/features/dnote:1": {},
-    "ghcr.io/devcontainers-extra/features/act:1": {},
-    "ghcr.io/devcontainers-extra/features/wireguard-apt-get:1": {},
-    "ghcr.io/devcontainers/features/desktop-lite:1": {
-      "password": "test",
-      "webPort": "6080",
-      "vncPort": "5901"
-    }
+	"ghcr.io/devcontainers/features/common-utils:2": {},
+	"ghcr.io/devcontainers/features/sshd:1": {},
+	"ghcr.io/devcontainers/features/rust:1": {
+	  "targets": "wasm32-unknown-unknown",
+	  "profile": "default",
+	},
+	"ghcr.io/lee-orr/rusty-dev-containers/sccache:0": {},
+	"ghcr.io/devcontainers-extra/features/dnote:1": {},
+	"ghcr.io/devcontainers-extra/features/act:1": {},
+	"ghcr.io/devcontainers-extra/features/wireguard-apt-get:1": {},
+	"ghcr.io/devcontainers/features/desktop-lite:1": {
+	  "password": "test",
+	  "webPort": "6080",
+	  "vncPort": "5901"
+	}
   },
   "customizations": {
-    "codespaces": {
-      "openFiles": [
-        "README.md"
-      ]
-    },
-    "vscode": {
-      "extensions": [
-        "rust-lang.rust-analyzer",
-        "aaron-bond.better-comments",
-        "Gruntfuggly.todo-tree",
-        "Equinusocio.vsc-material-theme-icons",
-        "enkia.tokyo-night"
-      ],
-      "settings": {
-        "workbench.settings.editor": "json",
-        "npm.autoDetect": false,
-        "telemetry.enableTelemetry": false,
-        "search.exclude": {
-          "**/target": true,
-          "**/vscode/bin/": true
-        },
-        "files.watcherExclude": {
-          "**/.git/objects/**": true,
-          "**/.git/subtree-cache/**": true,
-          "**/target": true,
-          "**/vscode/bin/": true
-        },
-        "workbench.colorTheme": "Tokyo Night Storm",
-        "workbench.iconTheme": "eq-material-theme-icons-darker",
-        "terminal.integrated.allowChords": true,
-        "terminal.integrated.shellIntegration.history": true,
-        "security.workspace.trust.untrustedFiles": "open",
-        "todo-tree.general.statusBar": "total",
-        "todo-tree.general.showActivityBarBadge": true,
-        "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
-        "todo-tree.general.tags": [
-          "<>QUEST",
-          "<>TASK",
-          "<>CHALLENGE"
-        ],
-        "todo-tree.tree.expanded": true,
-        "todo-tree.tree.flat": true,
-        "todo-tree.highlights.backgroundColourScheme": [
-          "purple",
-          "blue",
-          "green",
-        ],
-        "todo-tree.tree.showCountsInTree": true
-      }
-    },
+	"codespaces": {
+	  "openFiles": [
+		"README.md"
+	  ]
+	},
+	"vscode": {
+	  "extensions": [
+		"rust-lang.rust-analyzer",
+		"aaron-bond.better-comments",
+		"Gruntfuggly.todo-tree",
+		"Equinusocio.vsc-material-theme-icons",
+		"enkia.tokyo-night"
+	  ],
+	  "settings": {
+		"workbench.settings.editor": "json",
+		"npm.autoDetect": false,
+		"telemetry.enableTelemetry": false,
+		"search.exclude": {
+		  "**/target": true,
+		  "**/vscode/bin/": true
+		},
+		"files.watcherExclude": {
+		  "**/.git/objects/**": true,
+		  "**/.git/subtree-cache/**": true,
+		  "**/target": true,
+		  "**/vscode/bin/": true
+		},
+		"workbench.colorTheme": "Tokyo Night Storm",
+		"workbench.iconTheme": "eq-material-theme-icons-darker",
+		"terminal.integrated.allowChords": true,
+		"terminal.integrated.shellIntegration.history": true,
+		"security.workspace.trust.untrustedFiles": "open",
+		"todo-tree.general.statusBar": "total",
+		"todo-tree.general.showActivityBarBadge": true,
+		"todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
+		"todo-tree.general.tags": [
+		  "<>QUEST",
+		  "<>TASK",
+		  "<>CHALLENGE"
+		],
+		"todo-tree.tree.expanded": true,
+		"todo-tree.tree.flat": true,
+		"todo-tree.highlights.backgroundColourScheme": [
+		  "purple",
+		  "blue",
+		  "green",
+		],
+		"todo-tree.tree.showCountsInTree": true
+	  }
+	},
   },
-  "initializeCommand": ".devcontainer/init.sh",
+  "initializeCommand": "",
   "onCreateCommand": ".devcontainer/onCreate.sh",
   "updateContentCommand": {
-    "dotfiles": ".devcontainer/updateContentDotfile.sh",
-    "cargo": ".devcontainers/updateContentCargo.sh",
+	"dotfiles": "",
+	"cargo": ".devcontainers/updateContentCargo.sh",
   },
-  "postCreateCommand": ".devcontainer/postCreate.sh",
-  "postStartCommand": ".devcontainer/postStart.sh",
+  "postCreateCommand": "",
+  "postStartCommand": "",
   "postAttachCommand": {
-    "post": ".devcontainer/postAttach.sh",
-    "log-deps": ".devcontainer/postAttachDepLog.sh"
+	"post": ".devcontainer/postAttach.sh",
+	"log-deps": ""
   }
 }
