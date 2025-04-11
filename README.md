@@ -1,13 +1,26 @@
  <!-- omit in toc -->
 
+<style>
+.svg:hover {
+  filter: invert(5%) sepia(5%) saturate(100%) hue-rotate(180deg) brightness(100%) contrast(100%);
+  cursor: pointer;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+
 <div style="text-align: center;" align="center">
 <h1>🚀 Stellar Quest 3 🚀</h1>
 </div>
 
 ----
 
-<div align="center">
-  <img src="assets/title-screen.gif" alt="Open in Codespaces">
+<div align="center" class="center">
+  <img src="assets/title-screen.gif" alt="Play Stellar Quest 3" style="width: 90%;">
 </div>
 
 ----
@@ -16,7 +29,7 @@
   <h3>Skills Acquired</h3>
 </div>
 <div align="center" style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 15px; margin: 10px 0;">
-<span style="display: flex; align-items: center;">⭐️ <img src="assets/icons/rust-brands.svg" alt="Rust" style="margin: 0 5px;"></span>
+<span style="display: flex; align-items: center;">⭐️ <img src="assets/icons/rust-brands.svg" alt="Rust"style="margin: 0 5px;"></span>
 <span style="display: flex; align-items: center;">⭐️ <img src="assets/icons/docker-brands.svg" alt="Docker" style="margin: 0 5px;"></span>
 <span style="display: flex; align-items: center;">⭐️ <img src="assets/icons/square-git-brands.svg" alt="Git" style="margin: 0 5px;"></span>
 <span style="display: flex; align-items: center;">⭐️ <img src="assets/icons/node-js-brands.svg" alt="Node.js" style="margin: 0 5px;"></span>
@@ -27,30 +40,28 @@
 
 ----
 
-
-
-<div style="text-align: center;" align="center">
+<div class="center" align="center">
 <strong>💻 **Devcontainers on Demand**  💻</strong>
 </div><br/>
 
-<div align="center">
+<div align="center" class="center">
 <a href="https://github.com/codespaces/new?repo=anataliocs/soroban-quest">
-  <img src="https://github.com/codespaces/badge.svg" alt="Open in Codespaces">
+  <img class="svg" src="https://github.com/codespaces/badge.svg" alt="Open in Codespaces">
 </a>
 </div><br/>
 <div align="center">
 <a href="https://app.codeanywhere.com/#https://github.com/anataliocs/soroban-quest">
-  <img src="https://codeanywhere.com/img/open-in-codeanywhere-btn.svg" style="margin-right: 5px;"
+  <img class="svg" src="https://codeanywhere.com/img/open-in-codeanywhere-btn.svg" style="margin-right: 5px;"
 alt="Open in Codeanywhere">
 </a>
 <a href="https://codesandbox.io/s/github/anataliocs/soroban-quest">
-  <img src="./assets/codesandbox.svg" alt="Open in CodeSandbox" style="margin-bottom: 3px;">
+  <img class="svg" src="./assets/codesandbox.svg" alt="Open in CodeSandbox" style="margin-bottom: 3px;">
 </a>
 </div><br/>
 
 <div align="center">
 <a href="https://github.com/anataliocs/soroban-quest/fork">
-  <img src="./assets/stellar-start.svg" alt="Create a Fork">
+  <img class="svg" src="./assets/stellar-start.svg" alt="Create a Fork">
 </a>
 </div>
 
