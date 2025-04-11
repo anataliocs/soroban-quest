@@ -12,10 +12,10 @@
 
 ----
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 15px; margin: 10px 0;">
+<div align="center" style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 15px; margin: 10px 0;">
   <h3>Skills Acquired</h3>
 </div>
-<div style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 15px; margin: 10px 0;">
+<div align="center" style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 15px; margin: 10px 0;">
 <span style="display: flex; align-items: center;">⭐️ <img src="assets/icons/rust-brands.svg" alt="Rust" style="margin: 0 5px;"></span>
 <span style="display: flex; align-items: center;">⭐️ <img src="assets/icons/docker-brands.svg" alt="Docker" style="margin: 0 5px;"></span>
 <span style="display: flex; align-items: center;">⭐️ <img src="assets/icons/square-git-brands.svg" alt="Git" style="margin: 0 5px;"></span>
