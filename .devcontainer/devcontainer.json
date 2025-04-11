@@ -115,10 +115,10 @@
 	  }
 	},
   },
-  "initializeCommand": "chmod +x .devcontainer/onCreate.sh && chmod +x .devcontainer/updateContentCargo.sh &&  chmod +x .devcontainer/postAttach.sh",
-  "onCreateCommand": ".devcontainer/onCreate.sh",
+  "initializeCommand": "chmod +x .devcontainer/updateContentDotfile.sh && chmod +x .devcontainer/updateContentCargo.sh &&  chmod +x .devcontainer/postAttach.sh",
+  "onCreateCommand": "",
   "updateContentCommand": {
-	"dotfiles": "",
+	"dotfiles": ".devcontainer/updateContentDotfile.sh",
 	"cargo": ".devcontainer/updateContentCargo.sh",
   },
   "postCreateCommand": "",

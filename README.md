@@ -12,7 +12,7 @@
 
 ----
 
-<div align="center" style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 15px; margin: 10px 0;">
+<div align="center" style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 15px;margin: 5px 0;">
   <h3>Skills Acquired</h3>
 </div>
 <div align="center" style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 15px; margin: 10px 0;">
@@ -22,27 +22,20 @@
 <span style="display: flex; align-items: center;">️ <img src="assets/icons/node-js-brands.svg" alt="Node.js" style="margin: 0 5px;"></span>
 <span style="display: flex; align-items: center;">️ <img src="assets/icons/node-brands.svg" alt="Node" style="margin: 0 5px;"></span>
 <span style="display: flex; align-items: center;">️ <img src="assets/icons/markdown-brands.svg" alt="Markdown" style="margin: 0 5px;"></span>
+<span style="display: flex; align-items: center;">️ <img src="assets/icons/square-github-brands.svg" alt="Markdown"style="margin: 0 5px;"></span>
+
 </div>
 
 
 ----
 
 <div class="center" align="center">
-<strong>💻 **Devcontainers on Demand**  💻</strong>
+<h3> 💻 Devcontainer on Demand  💻 </h3>
 </div><br/>
 
 <div align="center" class="center">
 <a href="https://github.com/codespaces/new?repo=anataliocs/soroban-quest">
   <img class="svg" src="https://github.com/codespaces/badge.svg" alt="Open in Codespaces">
-</a>
-</div><br/>
-<div align="center">
-<a href="https://app.codeanywhere.com/#https://github.com/anataliocs/soroban-quest">
-  <img class="svg" src="https://codeanywhere.com/img/open-in-codeanywhere-btn.svg" style="margin-right: 5px;"
-alt="Open in Codeanywhere">
-</a>
-<a href="https://codesandbox.io/s/github/anataliocs/soroban-quest">
-  <img class="svg" src="./assets/codesandbox.svg" alt="Open in CodeSandbox" style="margin-bottom: 3px;">
 </a>
 </div><br/>
 
@@ -146,10 +139,3 @@ Make Stellar Quest 3 Your Gateway to Innovation, Growth, and Professional Develo
 
 ----
 
-#### Secondary Devcontainer Providers
-
-These aren't our first choice for dev ex but if you already use the tools then here you go:
-
-<a href="https://coder.com/deploy">
-  <img src="./assets/coder.svg" alt="Open in Coder">
-</a>
