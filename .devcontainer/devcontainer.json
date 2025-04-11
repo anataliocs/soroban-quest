@@ -115,7 +115,7 @@
 	  }
 	},
   },
-  "initializeCommand": "",
+  "initializeCommand": "chmod +x .devcontainer/onCreate.sh && chmod +x .devcontainers/updateContentCargo.sh &&  chmod +x .devcontainer/postAttach.sh",
   "onCreateCommand": ".devcontainer/onCreate.sh",
   "updateContentCommand": {
 	"dotfiles": "",
