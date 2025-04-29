@@ -1,0 +1,20 @@
+name: Quality Gate
+
+on:
+  workflow_dispatch:
+    inputs:
+      codespace:
+        type: boolean
+        default: true
+        description: test
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: View context attributes
+        run: |
+          ${{failure()}}
+      

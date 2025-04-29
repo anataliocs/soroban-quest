@@ -1,8 +1,10 @@
 # Use the official Rust image as a base
 FROM mcr.microsoft.com/devcontainers/rust:bullseye
 
-ENV CARGO_INCREMENTAL=0
-ENV RUSTFLAGS='-C target-cpu=native'
+ENV CARGO_INCREMENTAL=0 \
+    CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse \
+    RUSTFLAGS='-C target-cpu=native' \
+    PKG_CONFIG_PATH='/usr/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/share/pkgconfig'
 
 WORKDIR "/workspace/soroban-quest"
 

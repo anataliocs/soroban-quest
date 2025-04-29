@@ -75,14 +75,14 @@ Example happy logs:
 <> ✨STARDUST✨ - Completing this tasks can potentially award Stardust and sq3-xp
 ```
 
-- After you get your Codespace name let's verify and register it
+- After you get your Codespace name, let's verify and register it
 - `CMD+SHIFT+P` -> Command Palette(CP) -> Search for "Tasks: Run Tasks"
 	- It will also be a command named: `@command:workbench.action.tasks.runTask`
 	- Find the task named "QC - Quality-Gate-1:  Did the Devcontainer Startup correctly?"
 		- Execute the task and enter your Codespace name when prompted then submit
 
 ```
-<> HAPPY_PATH_CHECKPOINT_1 ☑️
+<> HAPPY_PATH_CHECKPOINT_1 ☑️ 
 ```
 
 ----

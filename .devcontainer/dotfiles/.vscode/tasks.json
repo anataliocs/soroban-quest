@@ -2,9 +2,9 @@
   "inputs": [
 	{
 	  "type": "promptString",
-	  "id": "input:qc-one-startup",
+	  "id": "qc-one-startup",
 	  "description": "Codespace name?",
-	  "default": "component"
+	  "password": false
 	},
 	{
 	  "type": "pickString",
@@ -44,11 +44,9 @@
 	  "args": [
 		"${input:qc-one-startup}"
 	  ],
-	  "problemMatcher": {
-		"pattern": {
-		  "kind": "file"
-		}
-	  }
+	  "problemMatcher": [
+		"$eslint-stylish"
+	  ]
 	},
 	{
 	  "label": "Question 1:  What is the purpose of the [no_std] tag?",
@@ -61,7 +59,10 @@
 	  "type": "shell",
 	  "args": [
 		"${input:question-one-answers}"
-	  ]
+	  ],
+	  "problemMatcher": {
+		"base": "$tsc-watch"
+	  }
 	},
 	{
 	  "label": "Question 2:  What does the [contract] attribute macro do?",

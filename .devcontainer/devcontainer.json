@@ -61,7 +61,8 @@
 	  "password": "test",
 	  "webPort": "6080",
 	  "vncPort": "5901"
-	}
+	},
+	"ghcr.io/devcontainers-extra/features/gh-cli:1.0.12": {}
   },
   "customizations": {
 	"codespaces": {
