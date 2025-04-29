@@ -11,7 +11,8 @@
 	  "--platform=linux/amd64"
 	],
 	"args": {
-	  "DEBIAN_VERSION": "bullseye"
+	  "DEBIAN_VERSION": "bullseye",
+	  "BUILDKIT_INLINE_CACHE": "1"
 	}
   },
   "hostRequirements": {
@@ -41,8 +42,6 @@
   "remoteEnv": {
 	"SOROBAN_RPC_URL": "https://soroban-testnet.stellar.org",
 	"SOROBAN_NETWORK_PASSPHRASE": "Test SDF Network ; September 2015",
-	"DISCORD_SERVER_ID": "897514728459468821",
-	"DISCORD_CHANNEL_ID": "897514728459468821",
 	"BUILD_LOG_FILE": "${containerWorkspaceFolder}/log/devcontainer/devcontainer_build.log",
 	"DEP_LOG_FILE": "${containerWorkspaceFolder}/log/devcontainer/dependencies.log"
   },
@@ -67,7 +66,6 @@
   "customizations": {
 	"codespaces": {
 	  "openFiles": [
-		"README.md",
 		"content/0-tutorial/0-tutorial.md"
 	  ]
 	},
@@ -98,24 +96,6 @@
 		"terminal.integrated.allowChords": true,
 		"terminal.integrated.shellIntegration.history": true,
 		"security.workspace.trust.untrustedFiles": "open",
-		"todo-tree": {
-		  "general.statusBar": "total",
-		  "general.showActivityBarBadge": true,
-		  "general.showIconsInsteadOfTagsInStatusBar": true,
-		  "general.tags": [
-			"<>QUEST",
-			"<>TASK",
-			"<>CHALLENGE"
-		  ],
-		  "tree.expanded": true,
-		  "tree.flat": true,
-		  "highlights.backgroundColourScheme": [
-			"purple",
-			"blue",
-			"green",
-		  ],
-		  "tree.showCountsInTree": true
-		},
 	  }
 	},
   },

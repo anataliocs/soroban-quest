@@ -7,7 +7,8 @@
 	"useSplitJSON",
 	"terminal",
 	"openDefaultSettings",
-	"colorTheme"
+	"colorTheme",
+	"editorAssociations"
   ],
   "workbench.colorTheme": "Tokyo Night Storm",
   "window.newWindowProfile": "Default",
@@ -19,30 +20,30 @@
 	"*.png": "imagePreview.previewEditor",
 	"*.md": "vscode.markdown.preview.editor"
   },
-  "todo-tree": {
-	"general.statusBar": "total",
-	"general.showActivityBarBadge": true,
-	"general.showIconsInsteadOfTagsInStatusBar": true,
-	"general.tags": [
-	  "<>QUEST",
-	  "<>TASK",
-	  "<>CODE"
-	],
-	"tree.expanded": true
-  },
-  "[better-comments]": {
-	"highlightPlainText": true,
-	"tags": [
-	  {
-		"tag": "//*",
-		"color": "#FF2D00",
-		"bold": true
-	  },
-	  {
-		"tag": "//?",
-		"color": "purple",
-		"bold": true
-	  }
-	]
-  }
+  "todo-tree.filtering.includeGlobs": [
+	"**/*.md",
+	"**/*.rs"
+  ],
+  "todo-tree.general.statusBar": "total",
+  "todo-tree.general.showActivityBarBadge": true,
+  "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
+  "todo-tree.general.tags": [
+	"<>QUEST",
+	"<>TASK",
+	"<>CODE"
+  ],
+  "todo-tree.tree.expanded": true,
+  "better-comments.highlightPlainText": true,
+  "better-comments.tags": [
+	{
+	  "tag": "//*",
+	  "color": "#FF2D00",
+	  "bold": true
+	},
+	{
+	  "tag": "//?",
+	  "color": "purple",
+	  "bold": true
+	}
+  ]
 }
