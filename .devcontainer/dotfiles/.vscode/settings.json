@@ -14,28 +14,32 @@
   "terminal.explorerKind": "external",
   "dev.containers.defaultFeatures": {},
   "workbench.editorAssociations": {
-    "*.png": "imagePreview.previewEditor"
+	"*.png": "imagePreview.previewEditor"
   },
-  "todo-tree.general.statusBar": "total",
-  "todo-tree.general.showActivityBarBadge": true,
-  "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
-  "todo-tree.general.tags": [
-    "<>QUEST",
-    "<>TASK",
-    "<>CODE"
-  ],
-  "todo-tree.tree.expanded": true,
-  "better-comments.highlightPlainText": true,
-  "better-comments.tags": [
-    {
-      "tag": "//*",
-      "color": "#FF2D00",
-      "bold": true
-    },
-    {
-      "tag": "//?",
-      "color": "purple",
-      "bold": true
-    }
-  ]
+  "todo-tree": {
+	"general.statusBar": "total",
+	"general.showActivityBarBadge": true,
+	"general.showIconsInsteadOfTagsInStatusBar": true,
+	"general.tags": [
+	  "<>QUEST",
+	  "<>TASK",
+	  "<>CODE"
+	],
+	"tree.expanded": true
+  },
+  "[better-comments]": {
+	"highlightPlainText": true,
+	"tags": [
+	  {
+		"tag": "//*",
+		"color": "#FF2D00",
+		"bold": true
+	  },
+	  {
+		"tag": "//?",
+		"color": "purple",
+		"bold": true
+	  }
+	]
+  }
 }

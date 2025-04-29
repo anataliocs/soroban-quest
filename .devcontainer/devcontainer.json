@@ -97,22 +97,24 @@
 		"terminal.integrated.allowChords": true,
 		"terminal.integrated.shellIntegration.history": true,
 		"security.workspace.trust.untrustedFiles": "open",
-		"todo-tree.general.statusBar": "total",
-		"todo-tree.general.showActivityBarBadge": true,
-		"todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
-		"todo-tree.general.tags": [
-		  "<>QUEST",
-		  "<>TASK",
-		  "<>CHALLENGE"
-		],
-		"todo-tree.tree.expanded": true,
-		"todo-tree.tree.flat": true,
-		"todo-tree.highlights.backgroundColourScheme": [
-		  "purple",
-		  "blue",
-		  "green",
-		],
-		"todo-tree.tree.showCountsInTree": true
+		"todo-tree": {
+		  "general.statusBar": "total",
+		  "general.showActivityBarBadge": true,
+		  "general.showIconsInsteadOfTagsInStatusBar": true,
+		  "general.tags": [
+			"<>QUEST",
+			"<>TASK",
+			"<>CHALLENGE"
+		  ],
+		  "tree.expanded": true,
+		  "tree.flat": true,
+		  "highlights.backgroundColourScheme": [
+			"purple",
+			"blue",
+			"green",
+		  ],
+		  "tree.showCountsInTree": true
+		},
 	  }
 	},
   },
