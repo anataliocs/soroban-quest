@@ -85,6 +85,11 @@ Example happy logs:
 <> HAPPY_PATH_CHECKPOINT_1 ☑️ 
 ```
 
+[![Quality Gate 1](https://github.com/anataliocs/soroban-quest/actions/workflows/qc.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/anataliocs/soroban-quest/actions/workflows/qc.yml)
+
+```
+```
+
 ----
 
 ![intro-0-[12].gif](intro-0-%5B12%5D.gif)
