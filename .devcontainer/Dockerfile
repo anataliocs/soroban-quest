@@ -11,7 +11,7 @@ RUN mkdir -p "${containerWorkspaceFolder}/log/devcontainer" && \
   touch "${containerWorkspaceFolder}/log/devcontainer/dependencies.log" && chmod -R 664 "${containerWorkspaceFolder}/log/devcontainer/"
 
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive && apt-get install -y \
-  firefox-esr && \
+  firefox-esr \
   xfce4-clipman-plugin \
   fonts-powerline \
   figlet \

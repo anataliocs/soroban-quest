@@ -1,20 +1,23 @@
 {
+  "workbench.settings.useSplitJSON": true,
   "workbench.settings.editor": "json",
+  "workbench.settings.openDefaultSettings": true,
+  "workbench.editor.enablePreview": true,
+  "workbench.settings.applyToAllProfiles": [
+	"useSplitJSON",
+	"terminal",
+	"openDefaultSettings",
+	"colorTheme"
+  ],
   "workbench.colorTheme": "Tokyo Night Storm",
   "window.newWindowProfile": "Default",
   "makefile.configureOnOpen": true,
   "explorer.confirmDragAndDrop": false,
-  "github.codespaces.devcontainerChangedNotificationStyle": "modal",
   "workbench.startupEditor": "readme",
-  "extensions.experimental.deferredStartupFinishedActivation": true,
-  "problems.showCurrentInStatus": true,
-  "github.codespaces.showPerformanceExplorer": true,
-  "workbench.editor.alwaysShowEditorActions": true,
   "vscode.commands.executeCommand": true,
-  "terminal.explorerKind": "external",
-  "dev.containers.defaultFeatures": {},
   "workbench.editorAssociations": {
-	"*.png": "imagePreview.previewEditor"
+	"*.png": "imagePreview.previewEditor",
+	"*.md": "vscode.markdown.preview.editor"
   },
   "todo-tree": {
 	"general.statusBar": "total",
