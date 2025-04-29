@@ -47,16 +47,17 @@
 	"DEP_LOG_FILE": "${containerWorkspaceFolder}/log/devcontainer/dependencies.log"
   },
   "features": {
-	"ghcr.io/devcontainers/features/common-utils:2": {},
+	"ghcr.io/devcontainers/features/common-utils:2.5.3": {},
 	"ghcr.io/devcontainers/features/sshd:1": {},
-	"ghcr.io/devcontainers/features/rust:1": {
+	"ghcr.io/devcontainers/features/rust:1.3.1": {
 	  "targets": "wasm32-unknown-unknown",
 	  "profile": "default",
 	},
-	"ghcr.io/lee-orr/rusty-dev-containers/sccache:0": {},
-	"ghcr.io/devcontainers-extra/features/dnote:1": {},
-	"ghcr.io/devcontainers-extra/features/act:1": {},
-	"ghcr.io/devcontainers-extra/features/wireguard-apt-get:1": {},
+	"ghcr.io/devcontainers-extra/features/gh-release:1.0.25": {
+	  "repo": "stellar/stellar-cli",
+	  "binaryNames": "stellar",
+	  "version": "22.6.0"
+	},
 	"ghcr.io/devcontainers/features/desktop-lite:1": {
 	  "password": "test",
 	  "webPort": "6080",
@@ -119,7 +120,7 @@
   "onCreateCommand": "",
   "updateContentCommand": {
 	"dotfiles": ".devcontainer/updateContentDotfile.sh",
-	"cargo": ".devcontainer/updateContentCargo.sh",
+	"cargo": "",
   },
   "postCreateCommand": "",
   "postStartCommand": "",

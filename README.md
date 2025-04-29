@@ -90,6 +90,13 @@ your actual workflow, building expertise with actual dev tools while you learn t
 - 🧪 **Realistic Coding Challenges:** Gain practical skills by writing actual testable code that passes CI/CD
   pipelines and quality gates like a real-world project!
 
+<br/>
+<div align="center">
+<a href="https://github.com/anataliocs/soroban-quest/fork">
+  <img class="svg" src="./assets/play-now.svg" alt="Play Now!">
+</a>
+</div>
+
 --
 
 ## 🛠️ Development Commands & Tips 🛠️
