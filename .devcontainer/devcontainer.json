@@ -100,14 +100,14 @@
 	  }
 	},
   },
-  "initializeCommand": "chmod +x .devcontainer/updateContentDotfile.sh && chmod +x .devcontainer/updateContentCargo.sh &&  chmod +x .devcontainer/postAttach.sh",
+  "initializeCommand": "chmod +x .devcontainer/updateContentDotfile.sh && chmod +x .devcontainer/updateContentCargo.sh && chmod +x .devcontainer/postAttach.sh  && chmod +x .devcontainer/postStart.sh",
   "onCreateCommand": "",
   "updateContentCommand": {
 	"dotfiles": ".devcontainer/updateContentDotfile.sh",
 	"cargo": "",
   },
   "postCreateCommand": "",
-  "postStartCommand": "",
+  "postStartCommand": ".devcontainer/postStart.sh",
   "postAttachCommand": {
 	"post": ".devcontainer/postAttach.sh",
 	"log-deps": ""
