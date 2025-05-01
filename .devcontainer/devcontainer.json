@@ -100,7 +100,7 @@
 	  }
 	},
   },
-  "initializeCommand": "chmod +x .devcontainer/updateContentDotfile.sh && chmod +x .devcontainer/updateContentCargo.sh &&  chmod +x .devcontainer/postAttach.sh && chmod +x postStart.sh",
+  "initializeCommand": "chmod +x .devcontainer/updateContentDotfile.sh && chmod +x .devcontainer/updateContentCargo.sh &&  chmod +x .devcontainer/postAttach.sh && chmod +x .devcontainer/postStart.sh",
   "onCreateCommand": "",
   "updateContentCommand": {
 	"dotfiles": ".devcontainer/updateContentDotfile.sh",
