@@ -1,13 +1,15 @@
  <!-- omit in toc -->
 
 <div style="text-align: center;" align="center">
-<h1>🚀 Stellar Quest 3 🚀</h1>
+<h1>🌌 Soroban Quest Expansion: Stellaria 🌌</h1>
 </div>
+
+⚠️ Currently in Alpha
 
 ----
 
 <div align="center" class="center">
-  <img src="assets/title-screen.gif" alt="Play Stellar Quest 3" style="width: 90%;">
+  <img src="assets/title-screen.gif" alt="Play Stellaria Expansion" style="width: 90%;">
 </div>
 
 ----
@@ -30,7 +32,7 @@
 ----
 
 <div class="center" align="center">
-<h3> 💻 Devcontainer on Demand  💻 </h3>
+<h3> Devcontainers 💻 </h3>
 </div><br/>
 
 <div align="center" class="center">
@@ -41,7 +43,7 @@
 
 <div align="center">
 <a href="https://github.com/anataliocs/soroban-quest/fork">
-  <img class="svg" src="./assets/stellar-start.svg" alt="Create a Fork">
+  <img class="svg" src="./assets/stellar-start.svg" alt="Fork to Play">
 </a>
 </div>
 
@@ -49,11 +51,9 @@
 
 ## 🌟 Introduction 🌟
 
-Welcome to the **Stellar Quest 3** preview! We are building an immersive approach to learning and practicing
-Stellar Smart Contract development. While isolated web tutorials are great we are trying to do something a bit more.
-Stellar Quest 3 brings **real-world developer environments** directly to
-your laptop on-demand, streamling onboarding and making your developer experience a bit more **gamified, engaging,
-and fun** 🔥.
+The **Soroban Quest** Stellaria Expansion is a fully updated reboot of Soroban Quest built with Devcontainers to provide an immersive approach to learning and practicing
+Stellar Smart Contract development. 
+
 
 #### 🏆**Preview of Proof of Completion Cert:**<br/>
 
@@ -61,7 +61,7 @@ and fun** 🔥.
   <img alt="Github Pages" src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&amp;logo=github&amp;logoColor=white"/>
 </a>
 
-## ✨ Why be Excited for Stellar Quest 3? ✨
+## ✨ Why be Excited for the Stellaria Expansion? ✨
 
 - 🌍 **Devcontainers:** OSS technology that lets you spin up highly customized environments
   effortlessly on GitHub Codespaces and other popular platforms
@@ -75,7 +75,7 @@ and fun** 🔥.
   wallets using the open-source Bitwarden password manager
 - 🔑 **Secure:** Secure OAuth2 integrations with Github and Discord and VPN and SSH for privacy and security
 
-## 🚦 What's Coming with Stellar Quest 3? 🚦
+## 🚦 What's Coming with the Stellaria Expansion? 🚦
 
 A refreshed and updated developer experience delivers a more guided, curated learning experience that connects with
 your actual workflow, building expertise with actual dev tools while you learn to code Stellar Smart Contracts.
@@ -124,12 +124,6 @@ echo 'Y' | gh codespace delete --all --force
 gh codespace ssh
 gh codespace logs
 ```
-
-### 📖 Quick Note-taking with DNote CLI:
-
-Document as you go conveniently and rapidly:
-
-- [DNote CLI - Commands](https://github.com/dnote/dnote/wiki/Dnote-CLI#commands)
 
 ## 🤝 Join Our Community 🤝
 
