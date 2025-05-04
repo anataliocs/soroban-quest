@@ -4,7 +4,8 @@
 <h1>🌌 Soroban Quest Expansion: Stellaria 🌌</h1>
 </div>
 
-⚠️ Currently in Alpha
+- ⚠️ Currently in Alpha
+- Interested in playtesting?  👉 [Stellar Discord](https://discord.gg/stellardev)
 
 ----
 
